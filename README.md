@@ -1,18 +1,15 @@
-## Welcome to GitHub Pages
+## TACS
 
-You can use the [editor on GitHub](https://github.com/anidroid/tacs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+TACS is a ...
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Installation
 
-### Markdown
+TACS requires `Python` and the libraries `pandas`,`spacy`, `re`. Its visualisations require `Jupyter Notebook`. Inst
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Introduction
+## Framework
+The dictionary consists of words and phrases (**Lexemes**). At the lowest level, lexical variants (_pass phrase_ and _password_) or very similar in meaning (_security gap_ and _secuirty hole_) are grouped into **Terms**. Each term is assigned to 1 of 4 **Domains**: Cyber Security (e.g. _hacker, password_), Security (e.g., _safety, danger_), Cyber (e.g., _mobile phone, user_), and General (_company, child_). Terms are further grouped into the broader **Concepts** to which they relate (e.g., the **Terms** _Exploit_ and _Security Flaw_ are grouped under the **Concept** _Vulnerability_. Concepts are assigned to 1 of several categories, nested within 2 over-arching dimensions--Security and Context--which can be thought of as separate dictionaries. The **Security Categories** are: 'Cybersecurity', 'Security Actor', 'Security General','Security Mechanism','Threat Actor','Threat General','Threat Mechanism'. The **Context Categories** are: 'Activity', 'Cyber Entity', 'Individual', 'Org', 'Quality'. 
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
 ### Header 3
 
 - Bulleted
