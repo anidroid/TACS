@@ -15,6 +15,6 @@ TACS consists of two files:		 TACS consists of: Dictionary data file `csd.csv` a
 Running TACS requires [`Python`](https://wiki.python.org/moin/BeginnersGuide/Download) and the libraries [`pandas`](https://pandas.pydata.org/getting_started.html) and [`spacy`](https://spacy.io/usage). Visualisations require `Jupyter Notebook`. With all required packages installed, download the files [tacs.py](tacs.py) and [csd.csv](csd.csv) and run tacs.py in a desired Python application.		 Running TACS requires [`Python`](https://wiki.python.org/moin/BeginnersGuide/Download) and the libraries [`pandas`](https://pandas.pydata.org/getting_started.html) and [`spacy`](https://spacy.io/usage). Visualisations require `Jupyter Notebook`. With all required packages installed, download the files [tacs.py](tacs.py) and [csd.csv](csd.csv) and run tacs.py in a Python application. [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/Documentation-DRAFT.ipynb)  can be accessed as an interactive Jupyter Notebook or HTML.		 The [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/Documentation-DRAFT.ipynb) can be accessed as an interactive Jupyter Notebook or HTML.
 
 ## Reference
-More information about the project can be found in the following [preprint](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/tacs-soups.pdf)
+Further information about the project can be found in the following [preprint](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/tacs-soups.pdf).
 
  
