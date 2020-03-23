@@ -10,4 +10,4 @@ The [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/maste
 
 ## Reference
 
-More information about the project can be found in the following [preprint](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/tacs-soups.pdf)
+More information about the project can be found in the following [preprint](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/tacs-soups.pdf).
