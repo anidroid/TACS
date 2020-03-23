@@ -6,4 +6,4 @@ Text Analysis tool for the Cyber Security domain (TACS) consists of an open-sour
 
 ## Documentation
 
-The [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/Documentation-DRAFT.ipynb)  can be accessed as an interactive Jupyter Notebook or HTML. 
+The [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/Documentation-DRAFT.ipynb)  can be accessed as an interactive Jupyter Notebook or HTML.
