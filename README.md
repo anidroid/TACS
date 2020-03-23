@@ -4,7 +4,13 @@ Text Analysis tool for the Cyber Security domain (TACS) consists of an open-sour
 
 ![TACS Framework](tacsfw.png)
 
-## Documentation
+## Installation
+
+TACS consists of two files:
+- `csd.csv`: Dictionary data with one Term per row, categories it belongs to as columns, individual lexemes listed in a single string.
+- `tacs.py`: A python file with functions to compile and use the dictionary from the Dictionary data.
+
+Running TACS requires [`Python`](https://wiki.python.org/moin/BeginnersGuide/Download) and the libraries [`pandas`](https://pandas.pydata.org/getting_started.html) and [`spacy`](https://spacy.io/usage). Visualisations require `Jupyter Notebook`. With all required packages installed, download the files [tacs.py](tacs.py) and [csd.csv](csd.csv) and run tacs.py in a desired Python application.
 
 The [Documentation](https://nbviewer.jupyter.org/github/anidroid/tacs/blob/master/Documentation-DRAFT.ipynb)  can be accessed as an interactive Jupyter Notebook or HTML.
 
