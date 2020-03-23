@@ -344,7 +344,7 @@ def tacs_count(data, level='concept', aggr='all', subcount = True, textcol='text
 
 # Annotation. Takes a tacs-tagged spacy document (or sentence). Returns annotated html or plain text.
 def tacs_annotate_doc(doc, render = False, custom=False, level='concept', context=True):
-    out = ''
+    out = '<style>.tacstok{font-weight:bold}</style>'
     for tok in doc:
         #print(tok._.csd, context)
         if tok._.csd=='None':
@@ -355,9 +355,9 @@ def tacs_annotate_doc(doc, render = False, custom=False, level='concept', contex
         elif custom != False:
             tokcats = [tok._.csd,parsecat(str(tok._.csd),level='concept'),parsecat(str(tok._.csd),level='category')]
             if any([custom in x for x in tokcats]):
-                out=out+' '.join(['<b>&nbsp',
+                out=out+' '.join(['<span class="tacstok">&nbsp',
                            tok.text,
-                           '</b><sub> ',
+                           '</span><sub> ',
                            parsecat(str(tok._.csd),level=level),
                            ' </sub>&nbsp'])
 
@@ -365,17 +365,17 @@ def tacs_annotate_doc(doc, render = False, custom=False, level='concept', contex
             if (tok._.csd.startswith('c_')):
                 out=out+tok.text+' '
             else:
-                out=out+' '.join(['<b>&nbsp',
+                out=out+' '.join(['<span class="tacstok">&nbsp',
                            tok.text,
-                           '</b><sub> ',
+                           '</span><sub> ',
                            parsecat(str(tok._.csd),level=level),
-                           ' </sub>'])
+                           ' </sub>&nbsp'])
         elif context == True:
-            out=out+' '.join(['<b>&nbsp',
-                       tok.text,
-                       '</b><sub> ',
-                       parsecat(str(tok._.csd),level=level),
-                       '</sub>'])
+            out=out+' '.join(['<span class="tacstok">&nbsp',
+                           tok.text,
+                           '</span><sub> ',
+                           parsecat(str(tok._.csd),level=level),
+                           ' </sub>&nbsp'])
     if render==True:        
         from IPython.core.display import display, HTML
         display(HTML(out))
@@ -383,7 +383,7 @@ def tacs_annotate_doc(doc, render = False, custom=False, level='concept', contex
         return out
     
 # Prints in notebook. Saves as output.
-def tacs_annotate(data, annot='html', show_annot = True, custom=False, level='concept', context=True):
+def tacs_annotate(data, annot='html', show_annot = True, custom=False, level='concept', context=True, textcol='text'):
     
     # Find/Produce tacs-tagged documents from input; same across functions; needs improving
     if isinstance(data, pd.DataFrame)==False:
@@ -398,8 +398,7 @@ def tacs_annotate(data, annot='html', show_annot = True, custom=False, level='co
 
     out = ''
     for doc in docs:
-        if output != False:
-            out = out+'<h2>Document '+str(docs.index(doc))+'</h2>'
+        out = out+'<h2>Document '+str(docs.index(doc))+'</h2>'
         out = out + tacs_annotate_doc(doc,custom=custom,level=level,context=context)    
     
     if annot == 'html':            
@@ -411,16 +410,17 @@ def tacs_annotate(data, annot='html', show_annot = True, custom=False, level='co
         from IPython.core.display import display, HTML
         display(HTML(out))
 
-
 # /////////////////////////////////////////////////////////////// #
 # Text Query //////////////////////////////////////////////////// #
 # /////////////////////////////////////////////////////////////// #
 
-def tacs_query(data, query, 
-               qsents = True, fulldoc = False, save_data = True, 
-               annot = False, save_annot = True, show_annot = True, 
-               custom=False, level='concept', context=True):
+def tacs_query(data, query, textcol='text',
+               qsents = True, return_all = False, 
+               data_return = False, data_save = True, 
+               annot_return = True, annot_save = True,
+               annot_markup = False, annot_level='concept'):
     
+    level = annot_level
     # Find/Produce tacs-tagged documents from input; same across functions; needs improving
     if isinstance(data, pd.DataFrame)==False:
         docs = data
@@ -449,8 +449,8 @@ def tacs_query(data, query,
         return False
     
     # Matches will be an object with the same shape as docs, boolean values, True = unit matches query
-    # sent nested in doc nested in docs if qsents=True
-    # doc nested in docs if qsents=False
+    # sent nested in doc nested in docs if sents=True
+    # doc nested in docs if sents=False
     matches = []
     for doc in docs:
         # For each document, checking if document or sentences matches condition.
@@ -488,22 +488,29 @@ def tacs_query(data, query,
         else:
             res.append([docid,docs[docid].text,docs[docid],matches[docid]])
             cols = ['docid','text','text_spacy','query']
-            
+
     outdat = pd.DataFrame(res,columns = cols)
-    if save_data == True:
+    
+    if return_all==False:
+        outdat = outdat[outdat['query']==True]
+    
+    if data_save == True:
         outdat.drop('text_spacy',axis=1).to_csv('tacsq_'+query+'.csv')
     
-    if annot=='html':
+    if data_return == True:
+        return outdat
+
+    if annot_markup=='html':
     # Annotate: Two options
     # a. full text is returned, sentences matching the query are highlighted
     # b. only sentences matching the query are returned, with no highlighting
         outhtml = ''
         for docid in set(outdat.docid):
             outhtml = outhtml+'<h2>Document '+str(docid)+'</h2>'
-            if fulldoc==False:
+            if return_all==False:
                 outhtml = outhtml+'<ul>'
             for i,r in outdat[outdat.docid==docid].iterrows():
-                if fulldoc == True:
+                if return_all == True:
                     if r['query'] == True:
                         outhtml = outhtml + '<span style="background-color:#cedde2">'+str(tacs_annotate_doc(r['text_spacy']))+'</span>'  
                     if r['query'] == False:
@@ -511,18 +518,18 @@ def tacs_query(data, query,
                 else:
                     if r['query'] == True:
                         outhtml = outhtml +'<li>'+str(tacs_annotate_doc(r['text_spacy']))+'</li>'  
-            if fulldoc==False:
+            if return_all==False:
                 outhtml = outhtml+'</ul>'
 
-        if save_annot == True:
+        if annot_save == True:
             Html_file= open('tacs_out.html',"w")
             Html_file.write(outhtml)
             Html_file.close()
 
-        if show_annot == True:
+        if annot_return == True:
             from IPython.core.display import display, HTML
             display(HTML(outhtml))
     
     #if annot=='rtf':
 
-    
+
