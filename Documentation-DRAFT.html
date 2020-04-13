@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Documentation-DRAFT</title>
+<title>Documentation-DRAFT_S</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13186,7 +13186,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Framework">Framework<a class="anchor-link" href="#Framework">&#182;</a></h3><p>The dictionary consists of words and phrases (<strong>Lexemes</strong>). At the lowest level, lexical variants (<em>pass phrase</em> and <em>password</em>) or very similar in meaning (<em>security gap</em> and <em>secuirty hole</em>) are grouped into <strong>Terms</strong>. Each term is assigned to 1 of 4 <strong>Domains</strong>: Cyber Security (e.g. <em>hacker, password</em>), Security (e.g., <em>safety, danger</em>), Cyber (e.g., <em>mobile phone, user</em>), and General (<em>company, child</em>). Terms are further grouped into the broader <strong>Concepts</strong> to which they relate (e.g., the <strong>Terms</strong> <em>Exploit</em> and <em>Security Flaw</em> are grouped under the <strong>Concept</strong> <em>Vulnerability</em>. Concepts are assigned to 1 of several categories, nested within 2 over-arching dimensions--Security and Context--which can be thought of as separate dictionaries. The <strong>Security Categories</strong> are: 'Cybersecurity', 'Security Actor', 'Security General','Security Mechanism','Threat Actor','Threat General','Threat Mechanism'. The <strong>Context Categories</strong> are: 'Activity', 'Cyber Entity', 'Individual', 'Org', 'Quality'.</p>
+<h3 id="Framework">Framework<a class="anchor-link" href="#Framework">&#182;</a></h3><p>The dictionary consists of words and phrases (<strong>Lexemes</strong>). At the lowest level, lexical variants (e.g. <em>pass phrase</em> and <em>password</em>) or lexemes that are very similar in meaning (e.g. <em>security gap</em> and <em>security hole</em>) are grouped into <strong>Terms</strong>. Each term is assigned to 1 of 4 <strong>Domains</strong>: Cyber Security (e.g. <em>hacker, password</em>), Security (e.g., <em>safety, danger</em>), Cyber (e.g., <em>mobile phone, user</em>), and General (e.g. <em>company, child</em>). Terms are further grouped into the broader <strong>Concepts</strong> to which they relate (e.g., the <strong>Terms</strong> <em>Exploit</em> and <em>Security Flaw</em> are grouped under the <strong>Concept</strong> <em>Vulnerability</em>. Concepts are assigned to 1 of several categories, nested within 2 over-arching dimensions--Security and Context--which can be thought of as separate <strong>Dictionaries</strong>. The <strong>Security Categories</strong> are: 'Cybersecurity', 'Security Actor', 'Security General','Security Mechanism','Threat Actor','Threat General','Threat Mechanism'. The <strong>Context Categories</strong> are: 'Activity', 'Cyber Entity', 'Individual', 'Org', 'Quality'.</p>
+<p><img src="dict_structure.png"></p>
+<p>The dictionary data (<code>csd.csv</code>) data includes one Term per row, lexemes in a <code>;</code>-separated list, the corresponding categories as columns, and a column with unique tag, or key, containing an abbreviated version of each category label in the format <code>dictionary_concept_category_term_domain</code>. The keys can be looked up in the dictionary data.</p>
 <p>The <code>tacs_show()</code> function with the <code>out='vis'</code> option can be used to visualise the framework as an interactive sunburst diagram in a Jupyter Notebook. The option <code>out='table'</code> produces a table with custom level. If <code>level='category'</code> is selected, the table shows one category per row, with concepts and their domains listed in a string. If <code>level='concept'</code>, each concept is displayed followed by a string of terms.</p>
 
 </div>
@@ -13194,7 +13196,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tacs_show</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="s1">&#39;vis&#39;</span><span class="p">)</span>
@@ -13249,20 +13251,20 @@ div#notebook {
 <div>
         
         
-            <div id="8137626d-7cf7-44e8-88e1-9ed2d63c5fd5" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="24c28103-4ba6-460e-a6fc-07df731a133a" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("8137626d-7cf7-44e8-88e1-9ed2d63c5fd5")) {
+                if (document.getElementById("24c28103-4ba6-460e-a6fc-07df731a133a")) {
                     Plotly.newPlot(
-                        '8137626d-7cf7-44e8-88e1-9ed2d63c5fd5',
-                        [{"domain": {"column": 0}, "insidetextfont": {"size": 11}, "labels": ["Safety", "S General", "S Mechanism", "S Actor", "T Actor", "Security", "Threat", "T General", "T Mechanism", "Vulnerability ", "Misc Threat ", "Phishing ", "Malware ", "Insider Threat ", "Identity Fraud ", "Hacking ", "Cyber Fraud ", "Espionage ", "Cyberbullying ", "Breach ", "Harm ", "Crime ", "Threat ", "Risk ", "Insecure ", "Hack ", "Disruption ", "Attack ", "Hacker ", "Criminal ", "Attacker ", "Updates ", "Training ", "Security Software ", "Regulatory ", "Patching ", "Password ", "Encryption ", "Encoding ", "Authentication ", "Anti-Malware ", "Access Control ", "Resilience ", "Confidentiality ", "Authenticity ", "Security ", "Protection ", "Privacy ", "Security Expert ", "Security Firm "], "maxdepth": 4, "parents": ["Security", "Safety", "Safety", "Safety", "Threat", "", "Security", "Threat", "Threat", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T Mechanism", "T General", "T General", "T General", "T General", "T General", "T General", "T General", "T General", "T Actor", "T Actor", "T Actor", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S Mechanism", "S General", "S General", "S General", "S General", "S General", "S General", "S Actor", "S Actor"], "type": "sunburst"}, {"domain": {"column": 1}, "insidetextfont": {"size": 11}, "labels": ["Context", "Quality", "Org", "Individual", "Cyber Entity", "Activity", "Positive ", "Negative ", "Tech ", "Organisation ", "Medical ", "Law & Order ", "Gov ", "Fin ", "User ", "Relationship ", "Pronoun3 ", "Pronoun2 ", "Pronoun1 ", "Work Role ", "Individual ", "Technology ", "Software ", "Network ", "Mobile Device ", "Internet ", "Device ", "Digi Comm ", "Asset ", "User Account ", "UI ", "Sharing ", "Political ", "Financial ", "Comm ", "Access "], "maxdepth": 3, "parents": ["", "Context", "Context", "Context", "Context", "Context", "Quality", "Quality", "Org", "Org", "Org", "Org", "Org", "Org", "Individual", "Individual", "Individual", "Individual", "Individual", "Individual", "Individual", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Cyber Entity", "Activity", "Activity", "Activity", "Activity", "Activity", "Activity"], "type": "sunburst"}],
+                        '24c28103-4ba6-460e-a6fc-07df731a133a',
+                        [{"domain": {"column": 0}, "insidetextfont": {"size": 11}, "labels": ["Safety", "S General", "S Mechanism", "S Actor", "T Actor", "Security", "Threat", "T General", "T Mechanism", "Access Control ", "Anti-Malware ", "Attack ", "Attacker ", "Authentication ", "Security General ", "Breach ", "Confidentiality ", "Crime ", "Criminal ", "Cyber Fraud ", "Cyberbullying ", "Disruption ", "Encoding ", "Encryption ", "Espionage ", "Hack ", "Hacker ", "Hacking ", "Harm ", "Identity Fraud ", "Insecure ", "Insider Threat ", "Malware ", "Misc Threat ", "Password ", "Patching ", "Phishing ", "Privacy ", "Protection ", "Regulatory ", "Resilience ", "Risk ", "Security ", "Security Expert ", "Security Firm ", "Security Software ", "Threat ", "Training ", "Updates ", "Vulnerability "], "maxdepth": 4, "parents": ["Security", "Safety", "Safety", "Safety", "Threat", "", "Security", "Threat", "Threat", "S Mechanism", "S Mechanism", "T General", "T Actor", "S Mechanism", "S General", "T Mechanism", "S General", "T General", "T Actor", "T Mechanism", "T Mechanism", "T General", "S Mechanism", "S Mechanism", "T Mechanism", "T General", "T Actor", "T Mechanism", "T General", "T Mechanism", "T General", "T Mechanism", "T Mechanism", "T Mechanism", "S Mechanism", "S Mechanism", "T Mechanism", "S General", "S General", "S Mechanism", "S General", "T General", "S General", "S Actor", "S Actor", "S Mechanism", "T General", "S Mechanism", "S Mechanism", "T Mechanism"], "type": "sunburst"}, {"domain": {"column": 1}, "insidetextfont": {"size": 11}, "labels": ["Context", "Quality", "Org", "Individual", "Cyber Entity", "Activity", "Access ", "Asset ", "Comm ", "Device ", "Digi Comm ", "Fin ", "Financial ", "Gov ", "Individual ", "Internet ", "Law & Order ", "Medical ", "Mobile Device ", "Negative ", "Network ", "Organisation ", "Political ", "Positive ", "Pronoun1 ", "Pronoun2 ", "Pronoun3 ", "Relationship ", "Sharing ", "Software ", "Tech ", "Technology ", "UI ", "User ", "User Account ", "Work Role "], "maxdepth": 3, "parents": ["", "Context", "Context", "Context", "Context", "Context", "Activity", "Cyber Entity", "Activity", "Cyber Entity", "Cyber Entity", "Org", "Activity", "Org", "Individual", "Cyber Entity", "Org", "Org", "Cyber Entity", "Quality", "Cyber Entity", "Org", "Activity", "Quality", "Individual", "Individual", "Individual", "Individual", "Activity", "Cyber Entity", "Org", "Cyber Entity", "Activity", "Individual", "Cyber Entity", "Individual"], "type": "sunburst"}],
                         {"extendsunburstcolors": true, "grid": {"columns": 2, "rows": 1}, "margin": {"b": 0, "l": 0, "r": 0, "t": 0}, "sunburstcolorway": ["#F23843", "#2C54B8", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#2F4F4F", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7", "#D7D7D7"], "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('8137626d-7cf7-44e8-88e1-9ed2d63c5fd5');
+var gd = document.getElementById('24c28103-4ba6-460e-a6fc-07df731a133a');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -13299,7 +13301,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tacs_show</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="n">level</span><span class="o">=</span><span class="s1">&#39;cat&#39;</span><span class="p">)</span>
@@ -13315,7 +13317,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13349,57 +13351,172 @@ if (outputEl) {{
   </thead>
   <tbody>
     <tr>
-      <th rowspan="7" valign="top">Security</th>
-      <th>Threat Mechanism</th>
+      <td rowspan="7" valign="top">Security</td>
+      <td>Threat Mechanism</td>
       <td>Vulnerability(S), Vulnerability(CS), Misc Thre...</td>
     </tr>
     <tr>
-      <th>Threat General</th>
+      <td>Threat General</td>
       <td>Harm(S), Crime(S), Threat(S), Risk(CS), Risk(S...</td>
     </tr>
     <tr>
-      <th>Threat Actor</th>
+      <td>Threat Actor</td>
       <td>Hacker(CS), Criminal(S), Attacker(S)</td>
     </tr>
     <tr>
-      <th>Security Mechanism</th>
+      <td>Security Mechanism</td>
       <td>Updates(G), Updates(CS), Updates(S), Training(...</td>
     </tr>
     <tr>
-      <th>Security General</th>
+      <td>Security General</td>
       <td>Resilience(S), Confidentiality(S), Authenticit...</td>
     </tr>
     <tr>
-      <th>Security Actor</th>
+      <td>Security Actor</td>
       <td>Security Expert(CS), Security Expert(S), Secur...</td>
     </tr>
     <tr>
-      <th>Cybersecurity</th>
+      <td>Cybersecurity</td>
       <td>Cybersecurity(CS), Cybersecurity(S)</td>
     </tr>
     <tr>
-      <th rowspan="5" valign="top">Context</th>
-      <th>Quality</th>
+      <td rowspan="5" valign="top">Context</td>
+      <td>Quality</td>
       <td>Positive(S), Positive(G), Negative(G)</td>
     </tr>
     <tr>
-      <th>Org</th>
+      <td>Org</td>
       <td>Tech(C), Organisation(S), Medical(S), Law &amp; Or...</td>
     </tr>
     <tr>
-      <th>Individual</th>
+      <td>Individual</td>
       <td>User(C), User(G), Relationship(G), Pronoun3(G)...</td>
     </tr>
     <tr>
-      <th>Cyber Entity</th>
+      <td>Cyber Entity</td>
       <td>Technology(C), Software(C), Network(C), Mobile...</td>
     </tr>
     <tr>
-      <th>Activity</th>
+      <td>Activity</td>
       <td>UI(C), Sharing(C), Political(C), Financial(C),...</td>
     </tr>
   </tbody>
 </table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tacs_show</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="n">level</span><span class="o">=</span><span class="s1">&#39;concept&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>term_domain</th>
+    </tr>
+    <tr>
+      <th>dict</th>
+      <th>cat</th>
+      <th>concept</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5" valign="top">Security</td>
+      <td rowspan="5" valign="top">Threat Mechanism</td>
+      <td>Vulnerability</td>
+      <td>Vulnerability(S), Overflow(CS), Security Flaw(...</td>
+    </tr>
+    <tr>
+      <td>Phishing</td>
+      <td>Phishing(CS)</td>
+    </tr>
+    <tr>
+      <td>Misc Threat</td>
+      <td>Zombie(CS), Zero Day(CS), Whaling(CS), Terrori...</td>
+    </tr>
+    <tr>
+      <td>Malware</td>
+      <td>Virus(CS), Trojan(CS), Spyware(CS), Ransomware...</td>
+    </tr>
+    <tr>
+      <td>Insider Threat</td>
+      <td>Insider Threat(S), Espionage(S), Employee Thef...</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td rowspan="5" valign="top">Context</td>
+      <td rowspan="5" valign="top">Activity</td>
+      <td>Sharing</td>
+      <td>Sharing(C)</td>
+    </tr>
+    <tr>
+      <td>Political</td>
+      <td>Voting(C)</td>
+    </tr>
+    <tr>
+      <td>Financial</td>
+      <td>Transaction(C), Shopping(C), Banking(C)</td>
+    </tr>
+    <tr>
+      <td>Comm</td>
+      <td>Messaging(C), Emailing(C)</td>
+    </tr>
+    <tr>
+      <td>Access</td>
+      <td>Login(C), Logging Out(C), Logging in(C), Grant...</td>
+    </tr>
+  </tbody>
+</table>
+<p>72 rows × 1 columns</p>
 </div>
 </div>
 
@@ -13419,14 +13536,14 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>TACS operates on text documents, which can be supplied to its functions as: a string, a list of strings, a table (dataframe) with text-column (labelled <code>text</code>, unless a custom label is specified via the <code>textcol</code> parameter. The final version should also be able to import documents (.txt, .docx, .pdf) directly from a specified folder path.</p>
+<p>TACS operates on text documents, which can be supplied to its functions as: a string, a list of strings, a table (dataframe) with a text-column (labelled <code>text</code>, unless a custom label is specified via the <code>textcol</code> parameter. The final version should also be able to import documents (.txt, .docx, .pdf) directly from a specified folder path.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;demodata.csv&#39;</span><span class="p">)</span>
@@ -13455,7 +13572,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">tacs_tag</span><span class="p">(</span><span class="s1">&#39;the boy is bullied online&#39;</span><span class="p">)</span>
@@ -13472,7 +13589,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -13501,7 +13618,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tacs_annotate_doc</span><span class="p">(</span><span class="n">tacs_tag</span><span class="p">(</span><span class="s1">&#39;the boy is bullied online&#39;</span><span class="p">),</span><span class="n">render</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -13559,7 +13676,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tacs_annotate_doc</span><span class="p">(</span><span class="n">tacs_tag</span><span class="p">(</span><span class="s1">&#39;the boy is shopping online&#39;</span><span class="p">,</span><span class="n">context_rule</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span><span class="n">render</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>

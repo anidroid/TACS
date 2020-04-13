@@ -1,10 +1,170 @@
 catkey,dict,cat,concept,term,domain,lexemes,lexemes_lem
-s_tttp_vuln_vulnerability_s,Security,Threat Mechanism,Vulnerability,Vulnerability,Security,vulnerabilities;vulnerability,vulnerability
-s_tttp_vuln_overflow_dcs,Security,Threat Mechanism,Vulnerability,Overflow,Cyber Security,buffer_overflows;buffer_overflow,buffer overflow
-s_tttp_vuln_secflaw_dcs,Security,Threat Mechanism,Vulnerability,Security Flaw,Cyber Security,security_gaps;security_flaws;security_hole;security_flaw;security_holes;security_gap,security flaw;security gap;security hole
-s_tttp_vuln_hole_s,Security,Threat Mechanism,Vulnerability,Flaw,Security,flaw;flaws;hole;,flaw
-s_tttp_vuln_exploit_dcs,Security,Threat Mechanism,Vulnerability,Exploit,Cyber Security,exploit;exploited;exploits;exploiting,exploit
-s_tttp_vuln_bug_dcs,Security,Threat Mechanism,Vulnerability,Bug,Cyber Security,bugged;bugging;bug;bugs,bug
+c_act_accs_login_dc,Context,Activity,Access,Login,Cyber,login,login
+c_act_accs_loggingout_dc,Context,Activity,Access,Logging Out,Cyber,logging_out;log_out;logged_off;log_off;logging_off;logged_out,log out;log off
+c_act_accs_loggingin_dc,Context,Activity,Access,Logging in,Cyber,log_ins;logging_on;log_onto;logging_onto;logging_into;logs_into;logged_into;logged_in;log_in;logged_onto;logged_on;logs_onto;login;log_into;logins;logging_in;logs_in;log_on;logs_on,log into;log onto;log on;log in;login
+c_act_accs_grantaccess_dc,Context,Activity,Access,Grant Access,Cyber,grant_access;granting_access;granted_access,grant access
+s_sttp_accs_sandboxing_dcs,Security,Security Mechanism,Access Control,Sandboxing,Cyber Security,sandboxing,sandbox
+s_sttp_accs_pki_dcs,Security,Security Mechanism,Access Control,PKI,Cyber Security,public_key_infrastructure,public key infrastructure
+s_sttp_accs_pin_dcs,Security,Security Mechanism,Access Control,PIN,Cyber Security,pin;pins;pinning;pinned,pin
+s_sttp_accs_padlock_dcs,Security,Security Mechanism,Access Control,Padlock,Cyber Security,padlocks;padlock,padlock
+s_sttp_accs_firewall_dcs,Security,Security Mechanism,Access Control,Firewall,Cyber Security,firewalled;firewall;firewalls,firewall
+s_sttp_accs_certificate_dg,Security,Security Mechanism,Access Control,Certificate,General,certificate;certificates;certificated,certificate;digital certificate
+s_sttp_accs_byod_dcs,Security,Security Mechanism,Access Control,BYOD,Cyber Security,byod,byod
+s_sttp_accs_authorizedaccess_dcs,Security,Security Mechanism,Access Control,Authorized Access,Cyber Security,authorized_access,authorize access
+s_sttp_accs_authentication_dcs,Security,Security Mechanism,Access Control,Authentication,Cyber Security,authentication;two_factor_authentication;auth;2-factor;certifications;2fa;certification,2fa;certification;authentication;2 - factor;auth;two factor authentication
+s_sttp_accs_accesscontrol_dcs,Security,Security Mechanism,Access Control,Access Control,Cyber Security,access_controls;access_control,access control
+s_sttp_antimalw_spamfilter_dcs,Security,Security Mechanism,Anti-Malware,Spam Filter,Cyber Security,spam_filter;spam_filters,spam filter
+s_sttp_antimalw_anti-virus_dcs,Security,Security Mechanism,Anti-Malware,Anti-Virus,Cyber Security,anti_viruses;kaspersky_software;antivirus;anti_virus_software;antivirus_software;anti_virus;norton;virus_scanning;antiviruses;virus_software;anti-virus,antivirus;anti virus;virus software;kaspersky;norton;virus scanning;antivirus;anti virus; anti - virus
+s_sttp_antimalw_anti-spyware_dcs,Security,Security Mechanism,Anti-Malware,Anti-Spyware,Cyber Security,antispyware_software;antispyware;anti-spyware,antispyware;antispyware; anti - spyware
+s_sttp_antimalw_anti-malware_dcs,Security,Security Mechanism,Anti-Malware,Anti-Malware,Cyber Security,anti_malware;anti-malware,anti malware; anti - malware
+c_cy_asset_data_dc,Context,Cyber Entity,Asset,Data,Cyber,database;electronic_data;data;databases,datum;database;electronic datum
+c_cy_asset_sensitivedata_ds,Context,Cyber Entity,Asset,Sensitive Data,Cyber,sensitive_data;sensitive_customer_information;sensitive_information,sensitive information;sensitive datum;sensitive customer information
+c_cy_asset_proprietarydata_ds,Context,Cyber Entity,Asset,Proprietary Data,Cyber,company_data;company_information,company datum;company information
+c_cy_asset_phonenumber_dc,Context,Cyber Entity,Asset,Phone Number,Cyber,phone_numbers;phone_number,phone number
+c_cy_asset_personaldata_dc,Context,Cyber Entity,Asset,Personal Data,Cyber,proprietary_information;identification_number;identify_information;user_names;social_security_numbers;usernames;personal_information;identification_numbers;identified_information;social_security_number;user_name;user_named;identifying_information;unique_identification_number;username;personally_identifiable_information;personal_data,identification number;unique identification number;username;social security number;personal datum;identify information;proprietary information;personally identifiable information;user name;personal information
+c_cy_asset_infoasset_dc,Context,Cyber Entity,Asset,Info Asset,Cyber,information_assets;information_asset,information asset
+c_cy_asset_healthdata_dc,Context,Cyber Entity,Asset,Health Data,Cyber,phi;protected_health_information;health_information,health information;phi;protect health information
+c_cy_asset_digitalfootprint_dc,Context,Cyber Entity,Asset,Digital Footprint,Cyber,digital_footprint,digital footprint
+c_cy_asset_customerdata_dc,Context,Cyber Entity,Asset,Customer Data,Cyber,customer_information,customer information
+c_cy_asset_creditcarddata_dc,Context,Cyber Entity,Asset,Credit Card Data,Cyber,credit_card_number;credit_card_numbers;card_number;credit_card_information;card_numbers;customer_data;card_information;credit_card_data;card_data,card number;card datum;credit card number;credit card datum;customer datum;card information;credit card information
+c_cy_asset_confidentialdata_dc,Context,Cyber Entity,Asset,Confidential Data,Cyber,confidential_information,confidential information
+c_cy_asset_accountnumber_dc,Context,Cyber Entity,Asset,Account Number,Cyber,account_numbers;account_number,account number
+c_cy_asset_money_ds,Context,Cyber Entity,Asset,Money,Cyber,moneys;money,money
+c_cy_asset_infrastructure_dc,Context,Cyber Entity,Asset,Infrastructure,Cyber,critical_infrastructure;infrastructures;infrastructure;critical_infrastructures;it_infrastructure;supply_chain;supply_chains;supply_chaining;it_infrastructures,it infrastructure;supply chain;critical infrastructure;infrastructure
+c_cy_asset_creditcard_dc,Context,Cyber Entity,Asset,Credit Card,Cyber,credit_cards;smart_card;credit_cards;credit_card;debit_cards;debit_card;smart_cards,credit card;smart card;debit card
+c_cy_asset_asset_ds,Context,Cyber Entity,Asset,Asset,Cyber,critical_asset;critical_assets,critical asset
+c_cy_asset_asset_dc,Context,Cyber Entity,Asset,Asset,Cyber,cyber_assets;it_asset;critical_cyber_assets;it_assets;critical_cyber_asset,it asset;cyber asset
+s_tgen_att_cyberattack_dcs,Security,Threat General,Attack,Cyber Attack,Cyber Security,cyber_attacked;cyber_attacks;cyber_attack,cyber attack
+s_ta_attacker_attacker_ds,Security,Threat Actor,Attacker,Attacker,Security,attackers;attacker,attacker
+s_sttp_auth_signature_dcs,Security,Security Mechanism,Authentication,Signature,Cyber Security,electronic_signatures;digital_signature;electronic_signature;digital_signatures,digital signature;electronic signature
+s_sttp_auth_pki_dcs,Security,Security Mechanism,Authentication,PKI,Cyber Security,public_key_infrastructure,public key infrastructure
+s_sttp_auth_certificate_dcs,Security,Security Mechanism,Authentication,DigiCertificate,Cyber Security,digital_certificate;digital_certificates,digital certificate
+s_sttp_auth_authorizedaccess_dcs,Security,Security Mechanism,Authentication,Authorized Access,Cyber Security,authorized_access,authorize access
+s_sttp_auth_authentication_ds,Security,Security Mechanism,Authentication,Authentication,Security,authentication;authentications;mutual_authentication,authentication;mutual authentication
+s_sgen_sgen_authenticity_ds,Security,Security General,Security General,Authenticity,Security,authenticity,authenticity
+s_tttp_br_breach_ds,Security,Threat Mechanism,Breach,Breach,Security,breach;breaches;breaching;breached,breach
+s_tttp_br_unauthorisedaccess_dcs,Security,Threat Mechanism,Breach,Unauthorised Access,Cyber Security,unauthorized_access;unauthorized_accesses,unauthorized access
+s_tttp_br_databreach_dcs,Security,Threat Mechanism,Breach,Data Breach,Cyber Security,data_leakage;breaches;security_breach;data_leakages;it_security_breach;it_security_breaches;security_breaches;data_breach;data_breaches,datum leakage;security breach;breach;datum breach;it security breach
+c_act_dcom_messaging_dc,Context,Activity,Comm,Messaging,Cyber,messaged;whatsapp;message;messaging,whatsapp;message
+c_act_dcom_emailing_dc,Context,Activity,Comm,Emailing,Cyber,email;emails;mailed;mailing;mail;emailing;mails;emailed,email;mailing;mail
+s_sgen_sgen_confidentiality_ds,Security,Security General,Confidentiality,Confidentiality,Security,confidential;secrets;secret;confidentiality,confidential;confidentiality;secret
+s_tgen_crim_crime_ds,Security,Threat General,Crime,Crime,Security,criminal_activities;criminal_activity;crime,criminal activity;crime
+s_ta_criminal_criminal_ds,Security,Threat Actor,Criminal,Criminal,Security,criminal;criminals,criminal;criminals
+s_tttp_frd_spoofing_dg,Security,Threat Mechanism,Cyber Fraud,Spoofing,General,conned;conning,con
+s_tttp_frd_spoofing_dcs,Security,Threat Mechanism,Cyber Fraud,Spoofing,Cyber Security,spoofing,spoof
+s_tttp_frd_spam_dcs,Security,Threat Mechanism,Cyber Fraud,Spam,Cyber Security,spam;spammed;spamming,spamm;spam
+s_tttp_frd_spam_dcs,Security,Threat Mechanism,Cyber Fraud,Spam,Cyber Security,spam,spam
+s_tttp_frd_socialengineering_dcs,Security,Threat Mechanism,Cyber Fraud,Social Engineering,Cyber Security,social_engineering,social engineering
+s_tttp_frd_scam_dcs,Security,Threat Mechanism,Cyber Fraud,Scam,Cyber Security,scams;scam;scam;forgery;scams,scam;forgery;scam
+s_tttp_frd_phishing_dcs,Security,Threat Mechanism,Cyber Fraud,Phishing,Cyber Security,smishing;vishing,smish;vish
+s_tttp_frd_fakewebsite_dcs,Security,Threat Mechanism,Cyber Fraud,Fake Website,Cyber Security,fake_websites;fake_website,fake website
+s_tttp_bulli_stalking_ds,Security,Threat Mechanism,Cyberbullying,Stalking,Security,stalk;stalking;stalked,stalk
+s_tttp_bulli_cyberbullying_dcs,Security,Threat Mechanism,Cyberbullying,Cyberbullying,Cyber Security,cyber_bullying;cyber_bullied;catfishing;catfished,cyber bully;catfish
+s_tttp_bulli_catfishing_dcs,Security,Threat Mechanism,Cyberbullying,Catfishing,Cyber Security,catfishing;catfish;catfishes,catfish
+s_tttp_bulli_bullying_ds,Security,Threat Mechanism,Cyberbullying,Bullying,Security,bullying;bully;bullies;bullied,bully
+s_csec_csec_voicesecurity_dcs,Security,Cybersecurity,Cybersecurity,Voice Security,Cyber Security,voice_security,voice security
+s_csec_csec_physicalsecurity_ds,Security,Cybersecurity,Cybersecurity,Physical Security,Security,physical_security,physical security
+s_csec_csec_networksecurity_dcs,Security,Cybersecurity,Cybersecurity,Network Security,Cyber Security,networks_security;network_security,network security
+s_csec_csec_itsecurity_dcs,Security,Cybersecurity,Cybersecurity,IT Security,Cyber Security,it_security,it security
+s_csec_csec_internetsecurity_dcs,Security,Cybersecurity,Cybersecurity,Internet Security,Cyber Security,wireless_security;site_security;wlan_security;online_security;internet_security,online security;site security;wlan security;internet security;wireless security
+s_csec_csec_informationsecurity_dcs,Security,Cybersecurity,Cybersecurity,Information Security,Cyber Security,information_assurance;information_safety;information_technology_contingency;information_security;,information security;information safety;information technology contingency;information assurance
+s_csec_csec_enterprisesecurity_dcs,Security,Cybersecurity,Cybersecurity,Enterprise Security,Cyber Security,enterprise_security,enterprise security
+s_csec_csec_datasecurity_dcs,Security,Cybersecurity,Cybersecurity,Data Security,Cyber Security,database_security;data_security,database security;datum security
+s_csec_csec_cybersecurity_dcs,Security,Cybersecurity,Cybersecurity,Cyber Security,Cyber Security,cybersecurity;cyber_security,cyber security;cybersecurity
+s_csec_csec_cybersecurity_dcs,Security,Cybersecurity,Cybersecurity,Cybersecurity,Cyber Security,computer_network_defense,computer network defense
+s_csec_csec_computersecurity_dcs,Security,Cybersecurity,Cybersecurity,Computer Security,Cyber Security,computer_security,computer security
+s_csec_csec_applicationssecurity_dcs,Security,Cybersecurity,Cybersecurity,Applications Security,Cyber Security,applications_security;application_security,application security
+c_cy_dev_homedevice_dc,Context,Cyber Entity,Device,Home Device,Cyber,electronic_computer;alexa,alexa;electronic computer
+c_cy_dev_device_dc,Context,Cyber Entity,Device,Device,Cyber,devices;device,device
+c_cy_dev_computer_dc,Context,Cyber Entity,Device,Computer,Cyber,computers;computer;pcs;computing_device;computing_devices;pc;personal_computer;personal_computers,pc;compute device;computer;pcs;personal computer
+c_cy_dcom_messaging_dc,Context,Cyber Entity,Digi Comm,Messaging,Cyber,whatsapp,whatsapp
+c_cy_dcom_email_dc,Context,Cyber Entity,Digi Comm,Email,Cyber,email_address;e_mails;email;emails;email_addresses;emails_address;mail_addresses;mail;mail_address;mails,email;e mail;mail;email address;mail address
+c_cy_dcom_digicomm_dc,Context,Cyber Entity,Digi Comm,Digi Comm,Cyber,electronic_communication;electronic_communications,electronic communication
+c_cy_dcom_attachment_dc,Context,Cyber Entity,Digi Comm,Attachment,Cyber,attachments;attachment,attachment
+s_tgen_disr_failure_ds,Security,Threat General,Disruption,Failure,Security,failure;failures,failure
+s_tgen_disr_disruption_ds,Security,Threat General,Disruption,Disruption,Security,disruptions;disruption;disturb;disturbing;disrupting,disruption
+s_tgen_disr_businessinterruption_ds,Security,Threat General,Disruption,Business Interruption,Security,business_interruption;business_interruptions,business interruption
+s_tgen_disr_bluescreen_dcs,Security,Threat General,Disruption,Blue Screen,Cyber Security,blue_screen;blue_screens,blue screen
+s_sttp_enc_encrypting_dcs,Security,Security Mechanism,Encoding,Encrypting,Cyber Security,encrypts;encrypting;plaintext;encrypt;encrypted,plaintext;encrypt
+s_sttp_enc_encoding_dcs,Security,Security Mechanism,Encoding,Encoding,Cyber Security,encoding;encode;encodes;encoded,encode
+s_sttp_enc_publickey_dcs,Security,Security Mechanism,Encryption,Public Key,Cyber Security,public_key,public key
+s_sttp_enc_plaintext_dcs,Security,Security Mechanism,Encryption,Plaintext,Cyber Security,plaintext,plaintext
+s_sttp_enc_key_dcs,Security,Security Mechanism,Encryption,Key,Cyber Security,secret_keys;private_keys;key_pair;secret_key;public_key;private_key;public_keys;symmetric_key;public_key_encryption,private key;secret key;symmetric key;key pair;public key;public key
+s_sttp_enc_hashing_dcs,Security,Security Mechanism,Encryption,Hashing,Cyber Security,hashing,hash
+s_sttp_enc_encryptionsoftware_dcs,Security,Security Mechanism,Encryption,Encryption Software,Cyber Security,encryption_software,encryption software
+s_sttp_enc_encryptionkey_dcs,Security,Security Mechanism,Encryption,Encryption Key,Cyber Security,encryption_keys;encryption_key,encryption key
+s_sttp_enc_encryption_dcs,Security,Security Mechanism,Encryption,Encryption,Cyber Security,encryption;encryption_technologies;encrypts;encryption_technology;encrypt;encryptions,encryption;encrypt
+s_sttp_enc_cryptography_dcs,Security,Security Mechanism,Encryption,Cryptography,Cyber Security,cryptosystem;cryptographically;cryptography;cryptanalysis;cryptology;cryptographic_algorithms,cryptosystem;cryptographic algorithm;cryptographically;cryptography;cryptology;cryptanalysis
+s_tttp_esp_sniffing_dcs,Security,Threat Mechanism,Espionage,Sniffing,Cyber Security,packet_sniffing,packet sniff
+s_tttp_esp_eavesdropping_dcs,Security,Threat Mechanism,Espionage,Eavesdropping,Cyber Security,Eavesdropper;eavesdroppers;eavesdropping;snooping;snoop;snooped,eavesdropping;eavesdropper;snoop
+c_org_fin_bank_ds,Context,Org,Fin,Bank,Security,banking;banked;banks;bank;financial_institution;financial_institutions,banking;financial institution;bank
+c_act_fin_transaction_dc,Context,Activity,Financial,Transaction,Cyber,online_transactions;online_transaction,online transaction
+c_act_fin_shopping_dc,Context,Activity,Financial,Shopping,Cyber,shopping,shopping
+c_act_fin_banking_dc,Context,Activity,Financial,Banking,Cyber,online_banking;internet_banking;banked_online;bank_online,internet banking;online banking;bank online
+c_org_gov_intelligenceagency_ds,Context,Org,Gov,Intelligence Agency,Security,intelligence_agencies;intelligence_agency,intelligence agency
+c_org_gov_government_ds,Context,Org,Gov,Government,Security,regime;regimes;governments;government,government;regime
+c_org_gov_authorities_ds,Context,Org,Gov,Authorities,Security,authorities,authority
+s_tgen_hack_hack_dcs,Security,Threat General,Hack,Hack,Cyber Security,hacks;hack,hack
+s_ta_hacker_hackinggroup_dcs,Security,Threat Actor,Hacker,Hacking Group,Cyber Security,hacking_groups;hacking_group,hack group
+s_ta_hacker_hacker_dcs,Security,Threat Actor,Hacker,Hacker,Cyber Security,cracker;hacker;script_kiddies;hackers;crackers;bot_herder;bot_herders,hacker;cybercriminal;cracker;script kiddy
+s_ta_hacker_cybcriminal_dcs,Security,Threat Actor,Hacker,CybCriminal,Cyber Security,cyber_thieves;cyber_thief;cyberthieves;cyberthief;cybercriminal;cybercriminals;cyber_criminal;cyber_criminals,cybercriminal
+s_tttp_hack_hacking_dcs,Security,Threat Mechanism,Hacking,Hacking,Cyber Security,hacked;hacked_on;hackers;hacks_on;hacking;hack;hack_on;hacks,hack;hack on;hacker
+s_tgen_harm_loss_ds,Security,Threat General,Harm,Loss,Security,losses;_loss;_lost,loss
+s_tgen_harm_damage_ds,Security,Threat General,Harm,Damage,Security,damage;damaged;damaging;damages,damaging;damage
+s_tgen_harm_loss_ds,Security,Threat General,Harm,Loss,Security,loss;losses;lose;losing,loss
+s_tgen_harm_damage_ds,Security,Threat General,Harm,Damage,Security,damage;damages,damage
+s_tttp_idf_identitytheft_dcs,Security,Threat Mechanism,Identity Fraud,Identity Theft,Cyber Security,identity_theft;identity_thefts,identity theft
+s_tttp_idf_identityfraud_dcs,Security,Threat Mechanism,Identity Fraud,Identity Fraud,Cyber Security,identity_fraud,identity fraud
+s_tttp_idf_cardfraud_dcs,Security,Threat Mechanism,Identity Fraud,Card Fraud,Cyber Security,card_fraud,card fraud
+s_tttp_idf_accounthijacking_dcs,Security,Threat Mechanism,Identity Fraud,Account Hijacking,Cyber Security,account_hijacking,account hijacking
+c_ind_ind_woman_dg,Context,Individual,Individual,Woman,General,women;ladies;woman;lady,lady;woman
+c_ind_ind_researcher_dg,Context,Individual,Individual,Researcher,General,researcher;researchers,researcher
+c_ind_ind_person_dg,Context,Individual,Individual,Person,General,human;individuals;humans;people;individual;person;persons;peoples,individual;human;person;people
+c_ind_ind_officer_dg,Context,Individual,Individual,Officer,General,officer;officers,officer
+c_ind_ind_man_dg,Context,Individual,Individual,Man,General,manning;men;mans;man,man
+c_ind_ind_girl_dg,Context,Individual,Individual,Girl,General,gal;gals;girls;girl,gal;girl
+c_ind_ind_expert_dg,Context,Individual,Individual,Expert,General,expert;experts,expert
+c_ind_ind_computerexpert_dg,Context,Individual,Individual,Computer Expert,General,it_staffs;technician;it_staff;network_administrator;securities_professional;system_administrator;systems_administrator;technicians;it_professionals;security_professional;it_employees;system_administrators;security_professionals;it_professional;it_employee;network_administrators;systems_administrators,technician;it employee;it staff;system administrator;network administrator;security professional;it professional
+c_ind_ind_child_dg,Context,Individual,Individual,Child,General,children;child;kids;kid;kidding,kid;child
+c_ind_ind_boy_dg,Context,Individual,Individual,Boy,General,lads;lad;boys;boy,boy;lad
+c_ind_ind_baby_dg,Context,Individual,Individual,Baby,General,babies;baby,baby
+s_tgen_ins_vulnerable_ds,Security,Threat General,Insecure,Vulnerable,Security,vulnerable,vulnerable
+s_tgen_ins_unsafe_ds,Security,Threat General,Insecure,Unsafe,Security,unsafe,unsafe
+s_tgen_ins_unpatched_dcs,Security,Threat General,Insecure,Unpatched,Cyber Security,unpatched,unpatched
+s_tgen_ins_insecure_ds,Security,Threat General,Insecure,Insecure,Security,insecure,insecure
+s_tgen_ins_exploitable_dcs,Security,Threat General,Insecure,Exploitable,Cyber Security,exploit;exploitable,exploit;exploitable
+s_tttp_insid_insiderthreat_ds,Security,Threat Mechanism,Insider Threat,Insider Threat,Security,insider_threats;insider_threat;inside_threat;inside_threats,insider threat;inside threat
+s_tttp_insid_espionage_ds,Security,Threat Mechanism,Insider Threat,Espionage,Security,corporate_espionage,corporate espionage
+s_tttp_insid_employeetheft_ds,Security,Threat Mechanism,Insider Threat,Employee Theft,Security,employee_theft,employee theft
+c_cy_int_wlan_dc,Context,Cyber Entity,Internet,WLAN,Cyber,wlan,wlan
+c_cy_int_wifi_dc,Context,Cyber Entity,Internet,WiFi,Cyber,wlan;wifi;public_wifi;wi_fi;wlans,wlan;wifi;wi fi;public wifi
+c_cy_int_website_dc,Context,Cyber Entity,Internet,Website,Cyber,web_sites;websites;web_services;webpages;web_service;internet_site;web_site;website;webpage;site;internet_sites;sites,web site;webpage;internet site;web service;site;website
+c_cy_int_sidebar_dc,Context,Cyber Entity,Internet,Sidebar,Cyber,sidebar,sidebar
+c_cy_int_online_dc,Context,Cyber Entity,Internet,Online,Cyber,online,online
+c_cy_int_macaddress_dc,Context,Cyber Entity,Internet,Mac Address,Cyber,mac_addresses;mac_address,mac address
+c_cy_int_lan_dc,Context,Cyber Entity,Internet,LAN,Cyber,local_area_network;lans;local_area_networks;lan,lan;local area network
+c_cy_int_ipaddress_dc,Context,Cyber Entity,Internet,IP Address,Cyber,ip_address;ip_addresses,ip address
+c_cy_int_internetofthings_dc,Context,Cyber Entity,Internet,Internet of Things,Cyber,internet_of_things;iot,iot;internet of thing
+c_cy_int_internetaddress_dc,Context,Cyber Entity,Internet,Internet Address,Cyber,internet_addresses;internet_address,internet address
+c_cy_int_internet_dc,Context,Cyber Entity,Internet,Internet,Cyber,web;nets;internet;net;netting;netted;internets,web;net;internet
+c_cy_int_http_dc,Context,Cyber Entity,Internet,HTTP,Cyber,http;hypertext_transfer_protocol,http;hypertext transfer protocol
+c_cy_int_homepage_dc,Context,Cyber Entity,Internet,Home Page,Cyber,home_pages;home_page,home page
+c_cy_int_cyberspace_dc,Context,Cyber Entity,Internet,Cyberspace,Cyber,cyberspace,cyberspace
+c_cy_int_browser_dc,Context,Cyber Entity,Internet,Browser,Cyber,browser;web_browsers;web_browser;browsers,browser;web browser
+c_org_lawo_watchdog_ds,Context,Org,Law & Order,Watchdog,Security,watchdogs;watchdog,watchdog
+c_org_lawo_secretservice_ds,Context,Org,Law & Order,Secret Service,Security,secret_service,secret service
+c_org_lawo_police_ds,Context,Org,Law & Order,Police,Security,polices;police_forces;police_force;police,police;police force
+c_org_lawo_law_ds,Context,Org,Law & Order,Law,Security,state_law;state_laws,state law
+c_org_lawo_fda_ds,Context,Org,Law & Order,FDA,Security,fda,fda
+c_org_lawo_enforcement_ds,Context,Org,Law & Order,Enforcement,Security,enforcement_agency;enforcement_agencies,enforcement agency
+s_tttp_malw_virus_dcs,Security,Threat Mechanism,Malware,Virus,Cyber Security,worm;viruses;macro_viruses;trojan;trojaned;worms;macro_virus;virus;worming,trojan;worm;virus;macro virus
+s_tttp_malw_trojan_dcs,Security,Threat Mechanism,Malware,Trojan,Cyber Security,trojan;trojan_horse;trojan_horses;trojans,trojan;trojan horse
+s_tttp_malw_spyware_dcs,Security,Threat Mechanism,Malware,Spyware,Cyber Security,spyware,spyware
+s_tttp_malw_ransomware_dcs,Security,Threat Mechanism,Malware,Ransomware,Cyber Security,ransomware;wannacry,ransomware;wannacry
+s_tttp_malw_malware_dcs,Security,Threat Mechanism,Malware,Malware,Cyber Security,malwares;monero_miner;android_malware;malicious_programs;malicious_code;malicious_file;malicious_software;nimda;monero_miners;malicious_codes;malicious_files;malicious_program;malware,malicious file;malicious program;malicious code;malware;malicious software;android malware;monero miner;nimda
+s_tttp_malw_keylogger_dcs,Security,Threat Mechanism,Malware,Keylogger,Cyber Security,keyloggers;keylogger,keylogger
+c_org_med_nhs_ds,Context,Org,Medical,NHS,Security,nhs;nhss,nhss;nhs
+c_org_med_healthcare_ds,Context,Org,Medical,Health Care,Security,health_care,health care
 s_tttp_tttp_zombie_dcs,Security,Threat Mechanism,Misc Threat,Zombie,Cyber Security,zombies;zombie,zombie
 s_tttp_tttp_zeroday_dcs,Security,Threat Mechanism,Misc Threat,Zero Day,Cyber Security,zero_day;zero_days,zero day
 s_tttp_tttp_whaling_dcs,Security,Threat Mechanism,Misc Threat,Whaling,Cyber Security,whaling,whaling
@@ -25,79 +185,46 @@ s_tttp_tttp_attackvector_dcs,Security,Threat Mechanism,Misc Threat,Attack Vector
 s_tttp_tttp_attacksurface_dcs,Security,Threat Mechanism,Misc Threat,Attack Surface,Cyber Security,attack_surface;attack_surfaced,attack surface
 s_tttp_tttp_apt_dcs,Security,Threat Mechanism,Misc Threat,APT,Cyber Security,advanced_persistent_threats;advanced_persistent_threat,advanced persistent threat
 s_tttp_tttp_hacktivism_dcs,Security,Threat Mechanism,Misc Threat,Hacktivism,Cyber Security,hacktivism;hactivism;hacktivist,hacktivism;hactivism;hacktivist
+c_cy_mdev_tablet_dc,Context,Cyber Entity,Mobile Device,Tablet,Cyber,ipad;ipads;tablets;tablet,tablet;ipad
+c_cy_mdev_phone_dc,Context,Cyber Entity,Mobile Device,Phone,Cyber,phoned;iphones;smart_phones;phones;phoning;laptops;smart_phone;iphone;laptop;phone,laptop;phone;smart phone;iphone
+c_cy_mdev_laptop_dc,Context,Cyber Entity,Mobile Device,Laptop,Cyber,laptops;laptop,laptop
+c_cy_mdev_kindle_dc,Context,Cyber Entity,Mobile Device,Kindle,Cyber,kindle,kindle
+c_sq_neg_unimportant_ds,Context,Quality,Negative,Unimportant,General,unimportant;irrelevant;not_important;not_relevent;meaningless;,unimportant;irrelevant;not_important;not_relevent;meaningless;
+c_sq_neg_uncertain_ds,Context,Quality,Negative,Uncertain,General,potential;actually;probably;maybe;potentially,probably;maybe;potentially;potential;actually
+c_sq_neg_suspicious_ds,Context,Quality,Negative,Suspicious,General,fraudulent;funny;funnier;suspect;dodgy;suspected;fishy;weird;shady;fallacious;suspicious;suspecting;suspects,suspecting;fishy;weird;fallacious;shady;suspect;fraudulent;funny;dodgy;suspicious
+c_sq_neg_confusing_ds,Context,Quality,Negative,Confusing,General,changing;convoluted;ambiguous;perplexing;complicated;confusing,change;confusing;complicated;convoluted;perplexing;ambiguous
+c_sq_neg_careless_ds,Context,Quality,Negative,Careless,General,careless;reckless;sloppy;forgetful;negligent;nonchalant,careless;reckless;sloppy;forgetful;negligent;nonchalant
+c_sq_neg_annoying_ds,Context,Quality,Negative,Annoying,General,nettlesome;irritating;bothersome;vexing;annoying;pesky,irritate;vexing;nettlesome;bothersome;pesky;annoying
+c_cy_netw_workstation_dc,Context,Cyber Entity,Network,Workstation,Cyber,workstation;workstations,workstation
+c_cy_netw_server_dc,Context,Cyber Entity,Network,Server,Cyber,servers;server,server
+c_cy_netw_network_dc,Context,Cyber Entity,Network,Network,Cyber,network;networking;home_network;electronic_networks;networks;home_networks;networked,home network;networking;electronic network;network
+c_cy_netw_infosys_dc,Context,Cyber Entity,Network,InfoSys,Cyber,information_system;information_systems,information system
+c_org_org_privatesector_ds,Context,Org,Organisation,Private Sector,Security,private_sectors;private_sector,private sector
+c_org_org_ngo_ds,Context,Org,Organisation,NGO,Security,nonprofit_organization;nonprofit_organizations,nonprofit organization
+c_org_org_institution_ds,Context,Org,Organisation,Institution,Security,institution;institutions,institution
+c_org_org_industry_ds,Context,Org,Organisation,Industry,Security,industries;industry,industry
+c_org_org_company_ds,Context,Org,Organisation,Company,Security,companies;enterprises;corporates;businesses;corporate;enterprise;firmer;firm;corporations;business;firms;organizations;organization;company;corporation,company;enterprise;corporation;corporate;firm;organization;business
+s_sttp_pass_passwordmanager_dcs,Security,Security Mechanism,Password,Password Manager,Cyber Security,password_manager,password manager
+s_sttp_pass_password_dcs,Security,Security Mechanism,Password,Password,Cyber Security,passphrase;passcode;passworded;watchword;lastpass;passwords;password;passcodes,passcode;watchword;password;passphrase;lastpass
+s_sttp_patch_patching_dcs,Security,Security Mechanism,Patching,Patching,Cyber Security,patching;patch_management;patched;patches;patch;patches;patch_management;patch;patching,patch;patch
 s_tttp_phish_phishing_dcs,Security,Threat Mechanism,Phishing,Phishing,Cyber Security,phishing_attacks;phish_email;phishing_attack;spear;phishes;phishing;phish;spear_phishing;phishing_email;phished;phishing_attack;phishing;phish;phishing_attacks;phishing_emails,phish;phish attack;phish email;spear phish;spear
-s_tttp_malw_virus_dcs,Security,Threat Mechanism,Malware,Virus,Cyber Security,worm;viruses;macro_viruses;trojan;trojaned;worms;macro_virus;virus;worming,trojan;worm;virus;macro virus
-s_tttp_malw_trojan_dcs,Security,Threat Mechanism,Malware,Trojan,Cyber Security,trojan;trojan_horse;trojan_horses;trojans,trojan;trojan horse
-s_tttp_malw_spyware_dcs,Security,Threat Mechanism,Malware,Spyware,Cyber Security,spyware,spyware
-s_tttp_malw_ransomware_dcs,Security,Threat Mechanism,Malware,Ransomware,Cyber Security,ransomware;wannacry,ransomware;wannacry
-s_tttp_malw_malware_dcs,Security,Threat Mechanism,Malware,Malware,Cyber Security,malwares;monero_miner;android_malware;malicious_programs;malicious_code;malicious_file;malicious_software;nimda;monero_miners;malicious_codes;malicious_files;malicious_program;malware,malicious file;malicious program;malicious code;malware;malicious software;android malware;monero miner;nimda
-s_tttp_malw_keylogger_dcs,Security,Threat Mechanism,Malware,Keylogger,Cyber Security,keyloggers;keylogger,keylogger
-s_tttp_insid_insiderthreat_ds,Security,Threat Mechanism,Insider Threat,Insider Threat,Security,insider_threats;insider_threat;inside_threat;inside_threats,insider threat;inside threat
-s_tttp_insid_espionage_ds,Security,Threat Mechanism,Insider Threat,Espionage,Security,corporate_espionage,corporate espionage
-s_tttp_insid_employeetheft_ds,Security,Threat Mechanism,Insider Threat,Employee Theft,Security,employee_theft,employee theft
-s_tttp_idf_identitytheft_dcs,Security,Threat Mechanism,Identity Fraud,Identity Theft,Cyber Security,identity_theft;identity_thefts,identity theft
-s_tttp_idf_identityfraud_dcs,Security,Threat Mechanism,Identity Fraud,Identity Fraud,Cyber Security,identity_fraud,identity fraud
-s_tttp_idf_cardfraud_dcs,Security,Threat Mechanism,Identity Fraud,Card Fraud,Cyber Security,card_fraud,card fraud
-s_tttp_idf_accounthijacking_dcs,Security,Threat Mechanism,Identity Fraud,Account Hijacking,Cyber Security,account_hijacking,account hijacking
-s_tttp_hack_hacking_dcs,Security,Threat Mechanism,Hacking,Hacking,Cyber Security,hacked;hacked_on;hackers;hacks_on;hacking;hack;hack_on;hacks,hack;hack on;hacker
-s_tttp_frd_spoofing_dg,Security,Threat Mechanism,Cyber Fraud,Spoofing,General,conned;conning,con
-s_tttp_frd_spoofing_dcs,Security,Threat Mechanism,Cyber Fraud,Spoofing,Cyber Security,spoofing,spoof
-s_tttp_frd_spam_dcs,Security,Threat Mechanism,Cyber Fraud,Spam,Cyber Security,spam;spammed;spamming,spamm;spam
-s_tttp_frd_spam_dcs,Security,Threat Mechanism,Cyber Fraud,Spam,Cyber Security,spam,spam
-s_tttp_frd_socialengineering_dcs,Security,Threat Mechanism,Cyber Fraud,Social Engineering,Cyber Security,social_engineering,social engineering
-s_tttp_frd_scam_dcs,Security,Threat Mechanism,Cyber Fraud,Scam,Cyber Security,scams;scam;scam;forgery;scams,scam;forgery;scam
-s_tttp_frd_phishing_dcs,Security,Threat Mechanism,Cyber Fraud,Phishing,Cyber Security,smishing;vishing,smish;vish
-s_tttp_frd_fakewebsite_dcs,Security,Threat Mechanism,Cyber Fraud,Fake Website,Cyber Security,fake_websites;fake_website,fake website
-s_tttp_esp_sniffing_dcs,Security,Threat Mechanism,Espionage,Sniffing,Cyber Security,packet_sniffing,packet sniff
-s_tttp_esp_eavesdropping_dcs,Security,Threat Mechanism,Espionage,Eavesdropping,Cyber Security,Eavesdropper;eavesdroppers;eavesdropping;snooping;snoop;snooped,eavesdropping;eavesdropper;snoop
-s_tttp_bulli_stalking_ds,Security,Threat Mechanism,Cyberbullying,Stalking,Security,stalk;stalking;stalked,stalk
-s_tttp_bulli_cyberbullying_dcs,Security,Threat Mechanism,Cyberbullying,Cyberbullying,Cyber Security,cyber_bullying;cyber_bullied;catfishing;catfished,cyber bully;catfish
-s_tttp_bulli_catfishing_dcs,Security,Threat Mechanism,Cyberbullying,Catfishing,Cyber Security,catfishing;catfish;catfishes,catfish
-s_tttp_bulli_bullying_ds,Security,Threat Mechanism,Cyberbullying,Bullying,Security,bullying;bully;bullies;bullied,bully
-s_tttp_br_breach_ds,Security,Threat Mechanism,Breach,Breach,Security,breach;breaches;breaching;breached,breach
-s_tttp_br_unauthorisedaccess_dcs,Security,Threat Mechanism,Breach,Unauthorised Access,Cyber Security,unauthorized_access;unauthorized_accesses,unauthorized access
-s_tttp_br_databreach_dcs,Security,Threat Mechanism,Breach,Data Breach,Cyber Security,data_leakage;breaches;security_breach;data_leakages;it_security_breach;it_security_breaches;security_breaches;data_breach;data_breaches,datum leakage;security breach;breach;datum breach;it security breach
-s_tgen_harm_loss_ds,Security,Threat General,Harm,Loss,Security,losses;_loss;_lost,loss
-s_tgen_harm_damage_ds,Security,Threat General,Harm,Damage,Security,damage;damaged;damaging;damages,damaging;damage
-s_tgen_harm_loss_ds,Security,Threat General,Harm,Loss,Security,loss;losses;lose;losing,loss
-s_tgen_harm_damage_ds,Security,Threat General,Harm,Damage,Security,damage;damages,damage
-s_tgen_crim_crime_ds,Security,Threat General,Crime,Crime,Security,criminal_activities;criminal_activity;crime,criminal activity;crime
-s_tgen_th_threat_ds,Security,Threat General,Threat,Threat,Security,threats;threat;threatening,threaten;threat;threat
-s_tgen_th_insecure_ds,Security,Threat General,Threat,Insecure,Security,insecure,insecure
-s_tgen_th_fear_ds,Security,Threat General,Threat,Fear,Security,frights;fearing;feared;fear;fright;fears,fright;fear
-s_tgen_th_danger_ds,Security,Threat General,Threat,Danger,Security,dangers;danger,danger
-s_tgen_ri_risk_ds,Security,Threat General,Risk,Cyber Risk,Cyber Security,cyber_risk;information_security_risk,peril;risk
-s_tgen_ri_risk_ds,Security,Threat General,Risk,Risk,Security,risks;risked;risking;risk,peril;risk
-s_tgen_ri_liability_ds,Security,Threat General,Risk,Liability,Security,liability;;liabilities;conundrum;perils;conundrum;peril,conundrum;liability;peril
-s_tgen_ri_hazard_ds,Security,Threat General,Risk,Hazard,Security,hazards;hazard,hazard
-s_tgen_ri_cyberrisk_dcs,Security,Threat General,Risk,Cyber Risk,Cyber Security,cybersecurity_risks;it_risk;security_risk;cybersecurity_risk;it_security_breach_risks;cyber_risks;security_risks;it_risks;cyber_risk,breach risk;cyber risk;it risk;security risk;cybersecurity risk
-s_tgen_ins_vulnerable_ds,Security,Threat General,Insecure,Vulnerable,Security,vulnerable,vulnerable
-s_tgen_ins_unsafe_ds,Security,Threat General,Insecure,Unsafe,Security,unsafe,unsafe
-s_tgen_ins_unpatched_dcs,Security,Threat General,Insecure,Unpatched,Cyber Security,unpatched,unpatched
-s_tgen_ins_insecure_ds,Security,Threat General,Insecure,Insecure,Security,insecure,insecure
-s_tgen_ins_exploitable_dcs,Security,Threat General,Insecure,Exploitable,Cyber Security,exploit;exploitable,exploit;exploitable
-s_tgen_hack_hack_dcs,Security,Threat General,Hack,Hack,Cyber Security,hacks;hack,hack
-s_tgen_disr_failure_ds,Security,Threat General,Disruption,Failure,Security,failure;failures,failure
-s_tgen_disr_disruption_ds,Security,Threat General,Disruption,Disruption,Security,disruptions;disruption;disturb;disturbing;disrupting,disruption
-s_tgen_disr_businessinterruption_ds,Security,Threat General,Disruption,Business Interruption,Security,business_interruption;business_interruptions,business interruption
-s_tgen_disr_bluescreen_dcs,Security,Threat General,Disruption,Blue Screen,Cyber Security,blue_screen;blue_screens,blue screen
-s_tgen_att_cyberattack_dcs,Security,Threat General,Attack,Cyber Attack,Cyber Security,cyber_attacked;cyber_attacks;cyber_attack,cyber attack
-s_ta_hacker_hackinggroup_dcs,Security,Threat Actor,Hacker,Hacking Group,Cyber Security,hacking_groups;hacking_group,hack group
-s_ta_hacker_hacker_dcs,Security,Threat Actor,Hacker,Hacker,Cyber Security,cracker;hacker;script_kiddies;hackers;crackers;bot_herder;bot_herders,hacker;cybercriminal;cracker;script kiddy
-s_ta_hacker_cybcriminal_dcs,Security,Threat Actor,Hacker,CybCriminal,Cyber Security,cyber_thieves;cyber_thief;cyberthieves;cyberthief;cybercriminal;cybercriminals;cyber_criminal;cyber_criminals,cybercriminal
-s_ta_criminal_criminal_ds,Security,Threat Actor,Criminal,Criminal,Security,criminal;criminals,criminal;criminals
-s_ta_attacker_attacker_ds,Security,Threat Actor,Attacker,Attacker,Security,attackers;attacker,attacker
-s_sttp_upd_updates_dg,Security,Security Mechanism,Updates,Updates,General,update;updates;update;updates;updated;updating,update
-s_sttp_upd_updatemanager_dcs,Security,Security Mechanism,Updates,Update Manager,Cyber Security,security_update_manager,security update manager
-s_sttp_upd_up-to-date_ds,Security,Security Mechanism,Updates,Up-to-date,Security,up_to_date,up to date
-s_sttp_upd_softwareupdate_dcs,Security,Security Mechanism,Updates,Software Update,Cyber Security,software_updates;software_update;software_updated,software update
-s_sttp_tra_training_dg,Security,Security Mechanism,Training,Training,General,training,training;
-s_sttp_tra_securitytraining_ds,Security,Security Mechanism,Training,Security Training,Security,security_training;security_awareness_training,security awareness training;security training
-s_sttp_tra_securityculture_dcs,Security,Security Mechanism,Training,Security Culture,Cyber Security,security_culture;security_cultures,security culture
-s_sttp_tra_knowledge_dcs,Security,Security Mechanism,Training,Knowledge,Cyber Security,security_knowledge,security knowledge
-s_sttp_tra_awareness_dcs,Security,Security Mechanism,Training,Awareness,Cyber Security,security_awareness,security awareness
-s_sttp_softw_securitysoftware_dcs,Security,Security Mechanism,Security Software,Security Software,Cyber Security,security_programs;access_control_systems;protection_software;security_manager;security_service;security_systems;security_services;security_application;security_managers;security_system;security_software;assessment_software;security_automation;security_applications;security_program;access_control_system; security_programme; it_security_programme; security_programmes; it_security_programmes,security service;security program;access control system;security automation;security manager;security application;protection software;assessment software;security system;security software
-s_sttp_softw_securityprogram_dcs,Security,Security Mechanism,Security Software,Security Program,Cyber Security,cybersecurity_programs;cybersecurity_program,cybersecurity program
+c_act_pol_voting_dc,Context,Activity,Political,Voting,Cyber,online_voting;internet_voting,online voting;internet voting
+c_sq_pos_vigilance_ds,Context,Quality,Positive,Vigilance,Security,thoughtful;watchfulness;diligence;vigilance;preparedness;careful,watchfulness;diligence;vigilance;thoughtful;preparedness;careful
+c_sq_pos_important_ds,Context,Quality,Positive,Important,Security,important;necessary;unnecessary;sensitive;unneeded,sensitive;unnecessary;unneeded;necessary;important
+c_sq_pos_certain_ds,Context,Quality,Positive,Certain,General,certain;obviously,certain;obviously
+s_sgen_priv_privacy_ds,Security,Security General,Privacy,Privacy,Security,privacy;secrecy;private,privacy;private;secrecy
+c_ind_pron_1stplwe/our_dg,Context,Individual,Pronoun1,1st pl We/Our,General,us;our;ourselves;we;ours;uses,us;use;ourselves;ours;our;we
+c_ind_pron_1sti/my_dg,Context,Individual,Pronoun1,1st I/My,General,mining;me;my;myself;mine;mines;iest;mined;i,i;my;mine;mining;me;myself
+c_ind_pron_2ndyou/your_dg,Context,Individual,Pronoun2,2nd You/Your,General,yourself;yourselves;yours;your;you,you;yours;yourself;your
+c_ind_pron_3rdshe/her_dg,Context,Individual,Pronoun3,3rd She/Her,General,hers;herself;heres;her;hering;she,she;here;hers;her;herself
+c_ind_pron_3rdhe/his_dg,Context,Individual,Pronoun3,3rd He/His,General,his;he;himself;him,himself;he;his;him
+s_sgen_prt_secure_ds,Security,Security General,Protection,Secure,Security,secures;secured;securing;secure,secure
+s_sgen_prt_protection_ds,Security,Security General,Protection,Protection,Security,protections;protecting;protected;protects;protect;protection,protect;protection
+s_sgen_prt_protection_dcs,Security,Security General,Protection,Data Protection,Cyber Security,identity_protection;data_protection,identity protection;datum protection
+s_sgen_prt_prevention_ds,Security,Security General,Protection,Prevention,Security,prevents;preventing;prevented;prevent,prevent
+s_sgen_prt_investigation_ds,Security,Security General,Protection,Investigation,Security,investigations;investigation,investigation
+s_sgen_prt_defence_ds,Security,Security General,Protection,Defence,Security,defences;defense;defence;defenses,defence;defense
+s_sgen_prt_backup_dc,Security,Security General,Protection,Backup,Cyber,computer_backup;backups;backup,computer backup;backup
 s_sttp_reg_threatmanagement_dcs,Security,Security Mechanism,Regulatory,Threat Management,Cyber Security,threat_analysis;vulnerability_assessments;threat_assessments;vulnerability_assessment;threat_assessment,threat analysis;vulnerability assessment;threat assessment
 s_sttp_reg_termsofservice_dcs,Security,Security Mechanism,Regulatory,Terms of Service,Cyber Security,terms_of_service,term of service
 s_sttp_reg_standard_dcs,Security,Security Mechanism,Regulatory,Standard,Cyber Security,security_standards;security_standard,security standard
@@ -126,51 +253,18 @@ s_sttp_reg_countermeasure_dcs,Security,Security Mechanism,Regulatory,Countermeas
 s_sttp_reg_compliance_ds,Security,Security Mechanism,Regulatory,Compliance,Security,compliance;compliance_checking;pci_compliance;compliance_checks,compliance
 s_sttp_reg_businesscontinuity_dcs,Security,Security Mechanism,Regulatory,Business Continuity,Cyber Security,business_continuity_planning;business_continuity_management,business continuity;business continuity
 s_sttp_reg_breachlaw_dcs,Security,Security Mechanism,Regulatory,Breach Law,Cyber Security,breach_laws;breach_law,breach law
-s_sttp_patch_patching_dcs,Security,Security Mechanism,Patching,Patching,Cyber Security,patching;patch_management;patched;patches;patch;patches;patch_management;patch;patching,patch;patch
-s_sttp_pass_passwordmanager_dcs,Security,Security Mechanism,Password,Password Manager,Cyber Security,password_manager,password manager
-s_sttp_pass_password_dcs,Security,Security Mechanism,Password,Password,Cyber Security,passphrase;passcode;passworded;watchword;lastpass;passwords;password;passcodes,passcode;watchword;password;passphrase;lastpass
-s_sttp_enc_publickey_dcs,Security,Security Mechanism,Encryption,Public Key,Cyber Security,public_key,public key
-s_sttp_enc_plaintext_dcs,Security,Security Mechanism,Encryption,Plaintext,Cyber Security,plaintext,plaintext
-s_sttp_enc_key_dcs,Security,Security Mechanism,Encryption,Key,Cyber Security,secret_keys;private_keys;key_pair;secret_key;public_key;private_key;public_keys;symmetric_key;public_key_encryption,private key;secret key;symmetric key;key pair;public key;public key
-s_sttp_enc_hashing_dcs,Security,Security Mechanism,Encryption,Hashing,Cyber Security,hashing,hash
-s_sttp_enc_encryptionsoftware_dcs,Security,Security Mechanism,Encryption,Encryption Software,Cyber Security,encryption_software,encryption software
-s_sttp_enc_encryptionkey_dcs,Security,Security Mechanism,Encryption,Encryption Key,Cyber Security,encryption_keys;encryption_key,encryption key
-s_sttp_enc_encryption_dcs,Security,Security Mechanism,Encryption,Encryption,Cyber Security,encryption;encryption_technologies;encrypts;encryption_technology;encrypt;encryptions,encryption;encrypt
-s_sttp_enc_cryptography_dcs,Security,Security Mechanism,Encryption,Cryptography,Cyber Security,cryptosystem;cryptographically;cryptography;cryptanalysis;cryptology;cryptographic_algorithms,cryptosystem;cryptographic algorithm;cryptographically;cryptography;cryptology;cryptanalysis
-s_sttp_enc_encrypting_dcs,Security,Security Mechanism,Encoding,Encrypting,Cyber Security,encrypts;encrypting;plaintext;encrypt;encrypted,plaintext;encrypt
-s_sttp_enc_encoding_dcs,Security,Security Mechanism,Encoding,Encoding,Cyber Security,encoding;encode;encodes;encoded,encode
-s_sttp_auth_signature_dcs,Security,Security Mechanism,Authentication,Signature,Cyber Security,electronic_signatures;digital_signature;electronic_signature;digital_signatures,digital signature;electronic signature
-s_sttp_auth_pki_dcs,Security,Security Mechanism,Authentication,PKI,Cyber Security,public_key_infrastructure,public key infrastructure
-s_sttp_auth_certificate_dcs,Security,Security Mechanism,Authentication,DigiCertificate,Cyber Security,digital_certificate;digital_certificates,digital certificate
-s_sttp_auth_authorizedaccess_dcs,Security,Security Mechanism,Authentication,Authorized Access,Cyber Security,authorized_access,authorize access
-s_sttp_auth_authentication_ds,Security,Security Mechanism,Authentication,Authentication,Security,authentication;authentications;mutual_authentication,authentication;mutual authentication
-s_sttp_antimalw_spamfilter_dcs,Security,Security Mechanism,Anti-Malware,Spam Filter,Cyber Security,spam_filter;spam_filters,spam filter
-s_sttp_antimalw_anti-virus_dcs,Security,Security Mechanism,Anti-Malware,Anti-Virus,Cyber Security,anti_viruses;kaspersky_software;antivirus;anti_virus_software;antivirus_software;anti_virus;norton;virus_scanning;antiviruses;virus_software;anti-virus,antivirus;anti virus;virus software;kaspersky;norton;virus scanning;antivirus;anti virus; anti - virus
-s_sttp_antimalw_anti-spyware_dcs,Security,Security Mechanism,Anti-Malware,Anti-Spyware,Cyber Security,antispyware_software;antispyware;anti-spyware,antispyware;antispyware; anti - spyware
-s_sttp_antimalw_anti-malware_dcs,Security,Security Mechanism,Anti-Malware,Anti-Malware,Cyber Security,anti_malware;anti-malware,anti malware; anti - malware
-s_sttp_accs_sandboxing_dcs,Security,Security Mechanism,Access Control,Sandboxing,Cyber Security,sandboxing,sandbox
-s_sttp_accs_pki_dcs,Security,Security Mechanism,Access Control,PKI,Cyber Security,public_key_infrastructure,public key infrastructure
-s_sttp_accs_pin_dcs,Security,Security Mechanism,Access Control,PIN,Cyber Security,pin;pins;pinning;pinned,pin
-s_sttp_accs_padlock_dcs,Security,Security Mechanism,Access Control,Padlock,Cyber Security,padlocks;padlock,padlock
-s_sttp_accs_firewall_dcs,Security,Security Mechanism,Access Control,Firewall,Cyber Security,firewalled;firewall;firewalls,firewall
-s_sttp_auth_certificate_dg,Security,Security Mechanism,Access Control,Certificate,General,certificate;certificates;certificated,certificate;digital certificate
-s_sttp_accs_byod_dcs,Security,Security Mechanism,Access Control,BYOD,Cyber Security,byod,byod
-s_sttp_accs_authorizedaccess_dcs,Security,Security Mechanism,Access Control,Authorized Access,Cyber Security,authorized_access,authorize access
-s_sttp_accs_authentication_dcs,Security,Security Mechanism,Access Control,Authentication,Cyber Security,authentication;two_factor_authentication;auth;2-factor;certifications;2fa;certification,2fa;certification;authentication;2 - factor;auth;two factor authentication
-s_sttp_accs_accesscontrol_dcs,Security,Security Mechanism,Access Control,Access Control,Cyber Security,access_controls;access_control,access control
+c_ind_rel_relative_dg,Context,Individual,Relationship,Relative,General,siblings;eldest;dads;grandson;grandsons;nephews;niece;daddy;elded;nieces;mums;dad;mum;nephew,nephew;niece;sibling;eld;grandson;dad;mum;daddy
+c_ind_rel_partner_dg,Context,Individual,Relationship,Partner,General,girlfriend,girlfriend
+c_ind_rel_friend_dg,Context,Individual,Relationship,Friend,General,friends;friend,friend
+c_ind_rel_acquaintance_dg,Context,Individual,Relationship,Acquaintance,General,acquaintances;acquaintance,acquaintance
 s_sgen_sgen_resilience_ds,Security,Security General,Resilience,Resilience,Security,resilience;resilient;resiliant;resiliance;resilience;resillient,resilience; resilient
-s_sgen_sgen_confidentiality_ds,Security,Security General,Confidentiality,Confidentiality,Security,confidential;secrets;secret;confidentiality,confidential;confidentiality;secret
-s_sgen_sgen_authenticity_ds,Security,Security General,Authenticity,Authenticity,Security,authenticity,authenticity
+s_tgen_ri_risk_ds,Security,Threat General,Risk,Cyber Risk,Cyber Security,cyber_risk;information_security_risk,peril;risk
+s_tgen_ri_risk_ds,Security,Threat General,Risk,Risk,Security,risks;risked;risking;risk,peril;risk
+s_tgen_ri_liability_ds,Security,Threat General,Risk,Liability,Security,liability;;liabilities;conundrum;perils;conundrum;peril,conundrum;liability;peril
+s_tgen_ri_hazard_ds,Security,Threat General,Risk,Hazard,Security,hazards;hazard,hazard
+s_tgen_ri_cyberrisk_dcs,Security,Threat General,Risk,Cyber Risk,Cyber Security,cybersecurity_risks;it_risk;security_risk;cybersecurity_risk;it_security_breach_risks;cyber_risks;security_risks;it_risks;cyber_risk,breach risk;cyber risk;it risk;security risk;cybersecurity risk
 s_sgen_sec_security_ds,Security,Security General,Security,Security,Security,invulnerability;secures;invulnerable;secure,secure;invulnerability;invulnerable
 s_sgen_sec_safety_ds,Security,Security General,Security,Safety,Security,safety;safes;safe;safest;safer,safety;safe
-s_sgen_prt_secure_ds,Security,Security General,Protection,Secure,Security,secures;secured;securing;secure,secure
-s_sgen_prt_protection_ds,Security,Security General,Protection,Protection,Security,protections;protecting;protected;protects;protect;protection,protect;protection
-s_sgen_prt_protection_dcs,Security,Security General,Protection,Data Protection,Cyber Security,identity_protection;data_protection,identity protection;datum protection
-s_sgen_prt_prevention_ds,Security,Security General,Protection,Prevention,Security,prevents;preventing;prevented;prevent,prevent
-s_sgen_prt_investigation_ds,Security,Security General,Protection,Investigation,Security,investigations;investigation,investigation
-s_sgen_prt_defence_ds,Security,Security General,Protection,Defence,Security,defences;defense;defence;defenses,defence;defense
-s_sgen_prt_backup_dc,Security,Security General,Protection,Backup,Cyber,computer_backup;backups;backup,computer backup;backup
-s_sgen_priv_privacy_ds,Security,Security General,Privacy,Privacy,Security,privacy;secrecy;private,privacy;private;secrecy
 s_sa_exp_securityspecialist_dcs,Security,Security Actor,Security Expert,Security Specialist,Cyber Security,cybersecurity_specialists;cybersecurity_specialist,cybersecurity specialist
 s_sa_exp_securityofficer_ds,Security,Security Actor,Security Expert,Security Officer,Security,security_officer;security_officers;chief_security_officer;chief_security_officers,chief security officer;security officer
 s_sa_exp_securityexpert_ds,Security,Security Actor,Security Expert,Security Expert,Security,security_specialist;security_expert;security_specialists;security_experts,security specialist;security expert
@@ -180,27 +274,16 @@ s_sa_exp_informationassurancemanager_dcs,Security,Security Actor,Security Expert
 s_sa_exp_incidentresponseteam_ds,Security,Security Actor,Security Expert,Incident Response Team,Security,incident_response_teams;incident_response_team,incident response team
 s_sa_exp_cybersecurityofficer_dcs,Security,Security Actor,Security Expert,Cyber Security Officer,Cyber Security,it_security_officer;it_security_officers,it security officer
 s_sa_firm_securityfirm_dcs,Security,Security Actor,Security Firm,Security Firm,Cyber Security,cybersecurity_firms;cybersecurity_firm,cybersecurity firm
-s_csec_csec_voicesecurity_dcs,Security,Cybersecurity,Cybersecurity,Voice Security,Cyber Security,voice_security,voice security
-s_csec_csec_physicalsecurity_ds,Security,Cybersecurity,Cybersecurity,Physical Security,Security,physical_security,physical security
-s_csec_csec_networksecurity_dcs,Security,Cybersecurity,Cybersecurity,Network Security,Cyber Security,networks_security;network_security,network security
-s_csec_csec_itsecurity_dcs,Security,Cybersecurity,Cybersecurity,IT Security,Cyber Security,it_security,it security
-s_csec_csec_internetsecurity_dcs,Security,Cybersecurity,Cybersecurity,Internet Security,Cyber Security,wireless_security;site_security;wlan_security;online_security;internet_security,online security;site security;wlan security;internet security;wireless security
-s_csec_csec_informationsecurity_dcs,Security,Cybersecurity,Cybersecurity,Information Security,Cyber Security,information_assurance;information_safety;information_technology_contingency;information_security;,information security;information safety;information technology contingency;information assurance
-s_csec_csec_enterprisesecurity_dcs,Security,Cybersecurity,Cybersecurity,Enterprise Security,Cyber Security,enterprise_security,enterprise security
-s_csec_csec_datasecurity_dcs,Security,Cybersecurity,Cybersecurity,Data Security,Cyber Security,database_security;data_security,database security;datum security
-s_csec_csec_cybersecurity_dcs,Security,Cybersecurity,Cybersecurity,Cyber Security,Cyber Security,cybersecurity;cyber_security,cyber security;cybersecurity
-s_csec_csec_cybersecurity_dcs,Security,Cybersecurity,Cybersecurity,Cybersecurity,Cyber Security,computer_network_defense,computer network defense
-s_csec_csec_computersecurity_dcs,Security,Cybersecurity,Cybersecurity,Computer Security,Cyber Security,computer_security,computer security
-s_csec_csec_applicationssecurity_dcs,Security,Cybersecurity,Cybersecurity,Applications Security,Cyber Security,applications_security;application_security,application security
-c_sq_pos_vigilance_ds,Context,Quality,Positive,Vigilance,Security,thoughtful;watchfulness;diligence;vigilance;preparedness;careful,watchfulness;diligence;vigilance;thoughtful;preparedness;careful
-c_sq_pos_important_ds,Context,Quality,Positive,Important,Security,important;necessary;unnecessary;sensitive;unneeded,sensitive;unnecessary;unneeded;necessary;important
-c_sq_pos_certain_ds,Context,Quality,Positive,Certain,General,certain;obviously,certain;obviously
-c_sq_neg_unimportant_ds,Context,Quality,Negative,Unimportant,General,unimportant;irrelevant;not_important;not_relevent;meaningless;,unimportant;irrelevant;not_important;not_relevent;meaningless;
-c_sq_neg_uncertain_ds,Context,Quality,Negative,Uncertain,General,potential;actually;probably;maybe;potentially,probably;maybe;potentially;potential;actually
-c_sq_neg_suspicious_ds,Context,Quality,Negative,Suspicious,General,fraudulent;funny;funnier;suspect;dodgy;suspected;fishy;weird;shady;fallacious;suspicious;suspecting;suspects,suspecting;fishy;weird;fallacious;shady;suspect;fraudulent;funny;dodgy;suspicious
-c_sq_neg_confusing_ds,Context,Quality,Negative,Confusing,General,changing;convoluted;ambiguous;perplexing;complicated;confusing,change;confusing;complicated;convoluted;perplexing;ambiguous
-c_sq_neg_careless_ds,Context,Quality,Negative,Careless,General,careless;reckless;sloppy;forgetful;negligent;nonchalant,careless;reckless;sloppy;forgetful;negligent;nonchalant
-c_sq_neg_annoying_ds,Context,Quality,Negative,Annoying,General,nettlesome;irritating;bothersome;vexing;annoying;pesky,irritate;vexing;nettlesome;bothersome;pesky;annoying
+s_sttp_softw_securitysoftware_dcs,Security,Security Mechanism,Security Software,Security Software,Cyber Security,security_programs;access_control_systems;protection_software;security_manager;security_service;security_systems;security_services;security_application;security_managers;security_system;security_software;assessment_software;security_automation;security_applications;security_program;access_control_system; security_programme; it_security_programme; security_programmes; it_security_programmes,security service;security program;access control system;security automation;security manager;security application;protection software;assessment software;security system;security software
+s_sttp_softw_securityprogram_dcs,Security,Security Mechanism,Security Software,Security Program,Cyber Security,cybersecurity_programs;cybersecurity_program,cybersecurity program
+c_act_sh_sharing_dc,Context,Activity,Sharing,Sharing,Cyber,share_information;sharing_information;information_sharing;data_sharing;shares_information;shared_information,datum share;share information;information share
+c_cy_softw_os_dc,Context,Cyber Entity,Software,OS,Cyber,operating_systems;operating_system;os;macos;mac_os;ios;windows_10;android,software system
+c_cy_softw_system_dc,Context,Cyber Entity,Software,System,Cyber,software_systems;software_system,software system
+c_cy_softw_software_dc,Context,Cyber Entity,Software,Software,Cyber,software;computers_software;softwares;computer_software,software;computer software
+c_cy_softw_program_dc,Context,Cyber Entity,Software,Program,Cyber,software_program;software_programs,software program
+c_cy_softw_package_dc,Context,Cyber Entity,Software,Package,Cyber,software_packages;packages;software_package;package,software package;package
+c_cy_softw_code_dc,Context,Cyber Entity,Software,Code,Cyber,code;codes,code
+c_cy_softw_app_dc,Context,Cyber Entity,Software,App,Cyber,app;applications;application;apps,app;application
 c_org_tech_yahoo_dc,Context,Org,Tech,Yahoo,Cyber,yahoo,yahoo
 c_org_tech_windows_dc,Context,Org,Tech,Windows,Cyber,windows,window
 c_org_tech_twitter_dc,Context,Org,Tech,Twitter,Cyber,twitter,twitter
@@ -220,52 +303,6 @@ c_org_tech_facebook_dc,Context,Org,Tech,Facebook,Cyber,facebook,facebook
 c_org_tech_ebay_dc,Context,Org,Tech,Ebay,Cyber,ebay,ebay
 c_org_tech_apple_dc,Context,Org,Tech,Apple,Cyber,apples;apple,apple
 c_org_tech_amazon_dc,Context,Org,Tech,Amazon,Cyber,amazon;amazon.com;amazons,amazon.com;amazon
-c_org_org_privatesector_ds,Context,Org,Organisation,Private Sector,Security,private_sectors;private_sector,private sector
-c_org_org_ngo_ds,Context,Org,Organisation,NGO,Security,nonprofit_organization;nonprofit_organizations,nonprofit organization
-c_org_org_institution_ds,Context,Org,Organisation,Institution,Security,institution;institutions,institution
-c_org_org_industry_ds,Context,Org,Organisation,Industry,Security,industries;industry,industry
-c_org_org_company_ds,Context,Org,Organisation,Company,Security,companies;enterprises;corporates;businesses;corporate;enterprise;firmer;firm;corporations;business;firms;organizations;organization;company;corporation,company;enterprise;corporation;corporate;firm;organization;business
-c_org_med_nhs_ds,Context,Org,Medical,NHS,Security,nhs;nhss,nhss;nhs
-c_org_med_healthcare_ds,Context,Org,Medical,Health Care,Security,health_care,health care
-c_org_lawo_watchdog_ds,Context,Org,Law & Order,Watchdog,Security,watchdogs;watchdog,watchdog
-c_org_lawo_secretservice_ds,Context,Org,Law & Order,Secret Service,Security,secret_service,secret service
-c_org_lawo_police_ds,Context,Org,Law & Order,Police,Security,polices;police_forces;police_force;police,police;police force
-c_org_lawo_law_ds,Context,Org,Law & Order,Law,Security,state_law;state_laws,state law
-c_org_lawo_fda_ds,Context,Org,Law & Order,FDA,Security,fda,fda
-c_org_lawo_enforcement_ds,Context,Org,Law & Order,Enforcement,Security,enforcement_agency;enforcement_agencies,enforcement agency
-c_org_gov_intelligenceagency_ds,Context,Org,Gov,Intelligence Agency,Security,intelligence_agencies;intelligence_agency,intelligence agency
-c_org_gov_government_ds,Context,Org,Gov,Government,Security,regime;regimes;governments;government,government;regime
-c_org_gov_authorities_ds,Context,Org,Gov,Authorities,Security,authorities,authority
-c_org_fin_bank_ds,Context,Org,Fin,Bank,Security,banking;banked;banks;bank;financial_institution;financial_institutions,banking;financial institution;bank
-c_ind_user_user_dc,Context,Individual,User,User,Cyber,end_users;web_surfers;internet_users;web_users;web_user;users;user;internet_user;end_user,web surfer;end user;web user;user;internet user
-c_ind_user_customer_dg,Context,Individual,User,Customer,General,customer;customers,customer
-c_ind_user_consumer_dg,Context,Individual,User,Consumer,General,consumers;consumer,consumer
-c_ind_user_client_dg,Context,Individual,User,Client,General,client;clients,client
-c_ind_user_cardholder_dc,Context,Individual,User,Cardholder,Cyber,cardholder;cardholders,cardholder
-c_ind_rel_relative_dg,Context,Individual,Relationship,Relative,General,siblings;eldest;dads;grandson;grandsons;nephews;niece;daddy;elded;nieces;mums;dad;mum;nephew,nephew;niece;sibling;eld;grandson;dad;mum;daddy
-c_ind_rel_partner_dg,Context,Individual,Relationship,Partner,General,girlfriend,girlfriend
-c_ind_rel_friend_dg,Context,Individual,Relationship,Friend,General,friends;friend,friend
-c_ind_rel_acquaintance_dg,Context,Individual,Relationship,Acquaintance,General,acquaintances;acquaintance,acquaintance
-c_ind_pron_3rdshe/her_dg,Context,Individual,Pronoun3,3rd She/Her,General,hers;herself;heres;her;hering;she,she;here;hers;her;herself
-c_ind_pron_3rdhe/his_dg,Context,Individual,Pronoun3,3rd He/His,General,his;he;himself;him,himself;he;his;him
-c_ind_pron_2ndyou/your_dg,Context,Individual,Pronoun2,2nd You/Your,General,yourself;yourselves;yours;your;you,you;yours;yourself;your
-c_ind_pron_1stplwe/our_dg,Context,Individual,Pronoun1,1st pl We/Our,General,us;our;ourselves;we;ours;uses,us;use;ourselves;ours;our;we
-c_ind_pron_1sti/my_dg,Context,Individual,Pronoun1,1st I/My,General,mining;me;my;myself;mine;mines;iest;mined;i,i;my;mine;mining;me;myself
-c_ind_jobr_serviceprovider_ds,Context,Individual,Work Role,Service Provider,Security,service_providers;service_provider;services_providers;services_provider,service provider
-c_ind_jobr_manager_ds,Context,Individual,Work Role,Manager,Security,line_managers;line_manager,line manager
-c_ind_jobr_employee_ds,Context,Individual,Work Role,Employee,Security,staffed;staff;staffing;staffers;employees;vendors;staffs;staff_member;staffer;staff_members;employee;personnel;vendor,staff member;staff;personnel;employee;staffer;vendor;staffing
-c_ind_jobr_contractmanager_ds,Context,Individual,Work Role,Contract Manager,Security,contracts_manager;contractor;contract_manager;contractors;contract_managers,contract manager;contractor
-c_ind_ind_woman_dg,Context,Individual,Individual,Woman,General,women;ladies;woman;lady,lady;woman
-c_ind_ind_researcher_dg,Context,Individual,Individual,Researcher,General,researcher;researchers,researcher
-c_ind_ind_person_dg,Context,Individual,Individual,Person,General,human;individuals;humans;people;individual;person;persons;peoples,individual;human;person;people
-c_ind_ind_officer_dg,Context,Individual,Individual,Officer,General,officer;officers,officer
-c_ind_ind_man_dg,Context,Individual,Individual,Man,General,manning;men;mans;man,man
-c_ind_ind_girl_dg,Context,Individual,Individual,Girl,General,gal;gals;girls;girl,gal;girl
-c_ind_ind_expert_dg,Context,Individual,Individual,Expert,General,expert;experts,expert
-c_ind_ind_computerexpert_dg,Context,Individual,Individual,Computer Expert,General,it_staffs;technician;it_staff;network_administrator;securities_professional;system_administrator;systems_administrator;technicians;it_professionals;security_professional;it_employees;system_administrators;security_professionals;it_professional;it_employee;network_administrators;systems_administrators,technician;it employee;it staff;system administrator;network administrator;security professional;it professional
-c_ind_ind_child_dg,Context,Individual,Individual,Child,General,children;child;kids;kid;kidding,kid;child
-c_ind_ind_boy_dg,Context,Individual,Individual,Boy,General,lads;lad;boys;boy,boy;lad
-c_ind_ind_baby_dg,Context,Individual,Individual,Baby,General,babies;baby,baby
 c_cy_tech_tech_dc,Context,Cyber Entity,Technology,Tech,Cyber,technologies;technical;technology,technology;technical
 c_cy_tech_it_dc,Context,Cyber Entity,Technology,IT,Cyber,information_technology;information_technologies,information technology
 c_cy_tech_electronic_dc,Context,Cyber Entity,Technology,Electronic,Cyber,electronic;electronics,electronic
@@ -275,78 +312,41 @@ c_cy_tech_screen_dc,Context,Cyber Entity,Technology,Screen,Cyber,screens;screene
 c_cy_tech_machine_dc,Context,Cyber Entity,Technology,Machine,Cyber,machine;machines;machined,machine
 c_cy_tech_interface_dc,Context,Cyber Entity,Technology,Interface,Cyber,interfaces;interface,interface
 c_cy_tech_hardware_dc,Context,Cyber Entity,Technology,Hardware,Cyber,computer_hardware;hardware,hardware;computer hardware
-c_cy_softw_os_dc,Context,Cyber Entity,Software,OS,Cyber,operating_systems;operating_system;os;macos;mac_os;ios;windows_10;android,software system
-c_cy_softw_system_dc,Context,Cyber Entity,Software,System,Cyber,software_systems;software_system,software system
-c_cy_softw_software_dc,Context,Cyber Entity,Software,Software,Cyber,software;computers_software;softwares;computer_software,software;computer software
-c_cy_softw_program_dc,Context,Cyber Entity,Software,Program,Cyber,software_program;software_programs,software program
-c_cy_softw_package_dc,Context,Cyber Entity,Software,Package,Cyber,software_packages;packages;software_package;package,software package;package
-c_cy_softw_code_dc,Context,Cyber Entity,Software,Code,Cyber,code;codes,code
-c_cy_softw_app_dc,Context,Cyber Entity,Software,App,Cyber,app;applications;application;apps,app;application
-c_cy_netw_workstation_dc,Context,Cyber Entity,Network,Workstation,Cyber,workstation;workstations,workstation
-c_cy_netw_server_dc,Context,Cyber Entity,Network,Server,Cyber,servers;server,server
-c_cy_netw_network_dc,Context,Cyber Entity,Network,Network,Cyber,network;networking;home_network;electronic_networks;networks;home_networks;networked,home network;networking;electronic network;network
-c_cy_netw_infosys_dc,Context,Cyber Entity,Network,InfoSys,Cyber,information_system;information_systems,information system
-c_cy_mdev_tablet_dc,Context,Cyber Entity,Mobile Device,Tablet,Cyber,ipad;ipads;tablets;tablet,tablet;ipad
-c_cy_mdev_phone_dc,Context,Cyber Entity,Mobile Device,Phone,Cyber,phoned;iphones;smart_phones;phones;phoning;laptops;smart_phone;iphone;laptop;phone,laptop;phone;smart phone;iphone
-c_cy_mdev_laptop_dc,Context,Cyber Entity,Mobile Device,Laptop,Cyber,laptops;laptop,laptop
-c_cy_mdev_kindle_dc,Context,Cyber Entity,Mobile Device,Kindle,Cyber,kindle,kindle
-c_cy_int_wlan_dc,Context,Cyber Entity,Internet,WLAN,Cyber,wlan,wlan
-c_cy_int_wifi_dc,Context,Cyber Entity,Internet,WiFi,Cyber,wlan;wifi;public_wifi;wi_fi;wlans,wlan;wifi;wi fi;public wifi
-c_cy_int_website_dc,Context,Cyber Entity,Internet,Website,Cyber,web_sites;websites;web_services;webpages;web_service;internet_site;web_site;website;webpage;site;internet_sites;sites,web site;webpage;internet site;web service;site;website
-c_cy_int_sidebar_dc,Context,Cyber Entity,Internet,Sidebar,Cyber,sidebar,sidebar
-c_cy_int_online_dc,Context,Cyber Entity,Internet,Online,Cyber,online,online
-c_cy_int_macaddress_dc,Context,Cyber Entity,Internet,Mac Address,Cyber,mac_addresses;mac_address,mac address
-c_cy_int_lan_dc,Context,Cyber Entity,Internet,LAN,Cyber,local_area_network;lans;local_area_networks;lan,lan;local area network
-c_cy_int_ipaddress_dc,Context,Cyber Entity,Internet,IP Address,Cyber,ip_address;ip_addresses,ip address
-c_cy_int_internetofthings_dc,Context,Cyber Entity,Internet,Internet of Things,Cyber,internet_of_things;iot,iot;internet of thing
-c_cy_int_internetaddress_dc,Context,Cyber Entity,Internet,Internet Address,Cyber,internet_addresses;internet_address,internet address
-c_cy_int_internet_dc,Context,Cyber Entity,Internet,Internet,Cyber,web;nets;internet;net;netting;netted;internets,web;net;internet
-c_cy_int_http_dc,Context,Cyber Entity,Internet,HTTP,Cyber,http;hypertext_transfer_protocol,http;hypertext transfer protocol
-c_cy_int_homepage_dc,Context,Cyber Entity,Internet,Home Page,Cyber,home_pages;home_page,home page
-c_cy_int_cyberspace_dc,Context,Cyber Entity,Internet,Cyberspace,Cyber,cyberspace,cyberspace
-c_cy_int_browser_dc,Context,Cyber Entity,Internet,Browser,Cyber,browser;web_browsers;web_browser;browsers,browser;web browser
-c_cy_dev_homedevice_dc,Context,Cyber Entity,Device,Home Device,Cyber,electronic_computer;alexa,alexa;electronic computer
-c_cy_dev_device_dc,Context,Cyber Entity,Device,Device,Cyber,devices;device,device
-c_cy_dev_computer_dc,Context,Cyber Entity,Device,Computer,Cyber,computers;computer;pcs;computing_device;computing_devices;pc;personal_computer;personal_computers,pc;compute device;computer;pcs;personal computer
-c_cy_dcom_messaging_dc,Context,Cyber Entity,Digi Comm,Messaging,Cyber,whatsapp,whatsapp
-c_cy_dcom_email_dc,Context,Cyber Entity,Digi Comm,Email,Cyber,email_address;e_mails;email;emails;email_addresses;emails_address;mail_addresses;mail;mail_address;mails,email;e mail;mail;email address;mail address
-c_cy_dcom_digicomm_dc,Context,Cyber Entity,Digi Comm,Digi Comm,Cyber,electronic_communication;electronic_communications,electronic communication
-c_cy_dcom_attachment_dc,Context,Cyber Entity,Digi Comm,Attachment,Cyber,attachments;attachment,attachment
-c_cy_asset_data_dc,Context,Cyber Entity,Asset,Data,Cyber,database;electronic_data;data;databases,datum;database;electronic datum
-c_cy_asset_sensitivedata_ds,Context,Cyber Entity,Asset,Sensitive Data,Cyber,sensitive_data;sensitive_customer_information;sensitive_information,sensitive information;sensitive datum;sensitive customer information
-c_cy_asset_proprietarydata_ds,Context,Cyber Entity,Asset,Proprietary Data,Cyber,company_data;company_information,company datum;company information
-c_cy_asset_phonenumber_dc,Context,Cyber Entity,Asset,Phone Number,Cyber,phone_numbers;phone_number,phone number
-c_cy_asset_personaldata_dc,Context,Cyber Entity,Asset,Personal Data,Cyber,proprietary_information;identification_number;identify_information;user_names;social_security_numbers;usernames;personal_information;identification_numbers;identified_information;social_security_number;user_name;user_named;identifying_information;unique_identification_number;username;personally_identifiable_information;personal_data,identification number;unique identification number;username;social security number;personal datum;identify information;proprietary information;personally identifiable information;user name;personal information
-c_cy_asset_infoasset_dc,Context,Cyber Entity,Asset,Info Asset,Cyber,information_assets;information_asset,information asset
-c_cy_asset_healthdata_dc,Context,Cyber Entity,Asset,Health Data,Cyber,phi;protected_health_information;health_information,health information;phi;protect health information
-c_cy_asset_digitalfootprint_dc,Context,Cyber Entity,Asset,Digital Footprint,Cyber,digital_footprint,digital footprint
-c_cy_asset_customerdata_dc,Context,Cyber Entity,Asset,Customer Data,Cyber,customer_information,customer information
-c_cy_asset_creditcarddata_dc,Context,Cyber Entity,Asset,Credit Card Data,Cyber,credit_card_number;credit_card_numbers;card_number;credit_card_information;card_numbers;customer_data;card_information;credit_card_data;card_data,card number;card datum;credit card number;credit card datum;customer datum;card information;credit card information
-c_cy_asset_confidentialdata_dc,Context,Cyber Entity,Asset,Confidential Data,Cyber,confidential_information,confidential information
-c_cy_asset_accountnumber_dc,Context,Cyber Entity,Asset,Account Number,Cyber,account_numbers;account_number,account number
-c_cy_asset_money_ds,Context,Cyber Entity,Asset,Money,Cyber,moneys;money,money
-c_cy_asset_infrastructure_dc,Context,Cyber Entity,Asset,Infrastructure,Cyber,critical_infrastructure;infrastructures;infrastructure;critical_infrastructures;it_infrastructure;supply_chain;supply_chains;supply_chaining;it_infrastructures,it infrastructure;supply chain;critical infrastructure;infrastructure
-c_cy_asset_creditcard_dc,Context,Cyber Entity,Asset,Credit Card,Cyber,credit_cards;smart_card;credit_cards;credit_card;debit_cards;debit_card;smart_cards,credit card;smart card;debit card
-c_cy_asset_asset_ds,Context,Cyber Entity,Asset,Asset,Cyber,critical_asset;critical_assets,critical asset
-c_cy_asset_asset_dc,Context,Cyber Entity,Asset,Asset,Cyber,cyber_assets;it_asset;critical_cyber_assets;it_assets;critical_cyber_asset,it asset;cyber asset
-c_cy_acc_google_dc,Context,Cyber Entity,User Account,Google,Cyber,google_accounts;google_account,google account
-c_cy_acc_email_dc,Context,Cyber Entity,User Account,Email,Cyber,gmail_account;email_account;gmail_accounts;hotmail;email_accounts,gmail account;email account;hotmail
-c_cy_acc_ecommerce_dc,Context,Cyber Entity,User Account,Ecommerce,Cyber,amazon_account,amazon account
-c_cy_acc_banking_dc,Context,Cyber Entity,User Account,Banking,Cyber,bank_accounts;bank_account;banks_account,bank account
-c_cy_acc_account_dc,Context,Cyber Entity,User Account,Account,Cyber,user_accounts;user_account,user account
+s_tgen_th_threat_ds,Security,Threat General,Threat,Threat,Security,threats;threat;threatening,threaten;threat;threat
+s_tgen_th_insecure_ds,Security,Threat General,Threat,Insecure,Security,insecure,insecure
+s_tgen_th_fear_ds,Security,Threat General,Threat,Fear,Security,frights;fearing;feared;fear;fright;fears,fright;fear
+s_tgen_th_danger_ds,Security,Threat General,Threat,Danger,Security,dangers;danger,danger
+s_sttp_tra_training_dg,Security,Security Mechanism,Training,Training,General,training,training;
+s_sttp_tra_securitytraining_ds,Security,Security Mechanism,Training,Security Training,Security,security_training;security_awareness_training,security awareness training;security training
+s_sttp_tra_securityculture_dcs,Security,Security Mechanism,Training,Security Culture,Cyber Security,security_culture;security_cultures,security culture
+s_sttp_tra_knowledge_dcs,Security,Security Mechanism,Training,Knowledge,Cyber Security,security_knowledge,security knowledge
+s_sttp_tra_awareness_dcs,Security,Security Mechanism,Training,Awareness,Cyber Security,security_awareness,security awareness
 c_act_ui_upload_dc,Context,Activity,UI,Upload,Cyber,uploading;upload;uploaded,uploading;uploaded;upload
 c_act_ui_uninstall_dc,Context,Activity,UI,Uninstall,Cyber,uninstall;uninstalled;uninstalling,uninstall;uninstalling;uninstalled
 c_act_ui_download_dc,Context,Activity,UI,Download,Cyber,downloaded;download;downloading;downloads,download
 c_act_ui_delete_dc,Context,Activity,UI,Delete,Cyber,delete;deleted;deletes;deleting,delete
 c_act_ui_click_dc,Context,Activity,UI,Click,Cyber,click;clicking;clicks;clicked,click
-c_act_sh_sharing_dc,Context,Activity,Sharing,Sharing,Cyber,share_information;sharing_information;information_sharing;data_sharing;shares_information;shared_information,datum share;share information;information share
-c_act_pol_voting_dc,Context,Activity,Political,Voting,Cyber,online_voting;internet_voting,online voting;internet voting
-c_act_fin_transaction_dc,Context,Activity,Financial,Transaction,Cyber,online_transactions;online_transaction,online transaction
-c_act_fin_shopping_dc,Context,Activity,Financial,Shopping,Cyber,shopping,shopping
-c_act_fin_banking_dc,Context,Activity,Financial,Banking,Cyber,online_banking;internet_banking;banked_online;bank_online,internet banking;online banking;bank online
-c_act_dcom_messaging_dc,Context,Activity,Comm,Messaging,Cyber,messaged;whatsapp;message;messaging,whatsapp;message
-c_act_dcom_emailing_dc,Context,Activity,Comm,Emailing,Cyber,email;emails;mailed;mailing;mail;emailing;mails;emailed,email;mailing;mail
-c_act_accs_login_dc,Context,Activity,Access,Login,Cyber,login,login
-c_act_accs_loggingout_dc,Context,Activity,Access,Logging Out,Cyber,logging_out;log_out;logged_off;log_off;logging_off;logged_out,log out;log off
-c_act_accs_loggingin_dc,Context,Activity,Access,Logging in,Cyber,log_ins;logging_on;log_onto;logging_onto;logging_into;logs_into;logged_into;logged_in;log_in;logged_onto;logged_on;logs_onto;login;log_into;logins;logging_in;logs_in;log_on;logs_on,log into;log onto;log on;log in;login
-c_act_accs_grantaccess_dc,Context,Activity,Access,Grant Access,Cyber,grant_access;granting_access;granted_access,grant access
+s_sttp_upd_updates_dg,Security,Security Mechanism,Updates,Updates,General,update;updates;update;updates;updated;updating,update
+s_sttp_upd_updatemanager_dcs,Security,Security Mechanism,Updates,Update Manager,Cyber Security,security_update_manager,security update manager
+s_sttp_upd_up-to-date_ds,Security,Security Mechanism,Updates,Up-to-date,Security,up_to_date,up to date
+s_sttp_upd_softwareupdate_dcs,Security,Security Mechanism,Updates,Software Update,Cyber Security,software_updates;software_update;software_updated,software update
+c_ind_user_user_dc,Context,Individual,User,User,Cyber,end_users;web_surfers;internet_users;web_users;web_user;users;user;internet_user;end_user,web surfer;end user;web user;user;internet user
+c_ind_user_customer_dg,Context,Individual,User,Customer,General,customer;customers,customer
+c_ind_user_consumer_dg,Context,Individual,User,Consumer,General,consumers;consumer,consumer
+c_ind_user_client_dg,Context,Individual,User,Client,General,client;clients,client
+c_ind_user_cardholder_dc,Context,Individual,User,Cardholder,Cyber,cardholder;cardholders,cardholder
+c_cy_acc_google_dc,Context,Cyber Entity,User Account,Google,Cyber,google_accounts;google_account,google account
+c_cy_acc_email_dc,Context,Cyber Entity,User Account,Email,Cyber,gmail_account;email_account;gmail_accounts;hotmail;email_accounts,gmail account;email account;hotmail
+c_cy_acc_ecommerce_dc,Context,Cyber Entity,User Account,Ecommerce,Cyber,amazon_account,amazon account
+c_cy_acc_banking_dc,Context,Cyber Entity,User Account,Banking,Cyber,bank_accounts;bank_account;banks_account,bank account
+c_cy_acc_account_dc,Context,Cyber Entity,User Account,Account,Cyber,user_accounts;user_account,user account
+s_tttp_vuln_vulnerability_s,Security,Threat Mechanism,Vulnerability,Vulnerability,Security,vulnerabilities;vulnerability,vulnerability
+s_tttp_vuln_overflow_dcs,Security,Threat Mechanism,Vulnerability,Overflow,Cyber Security,buffer_overflows;buffer_overflow,buffer overflow
+s_tttp_vuln_secflaw_dcs,Security,Threat Mechanism,Vulnerability,Security Flaw,Cyber Security,security_gaps;security_flaws;security_hole;security_flaw;security_holes;security_gap,security flaw;security gap;security hole
+s_tttp_vuln_hole_s,Security,Threat Mechanism,Vulnerability,Flaw,Security,flaw;flaws;hole;,flaw
+s_tttp_vuln_exploit_dcs,Security,Threat Mechanism,Vulnerability,Exploit,Cyber Security,exploit;exploited;exploits;exploiting,exploit
+s_tttp_vuln_bug_dcs,Security,Threat Mechanism,Vulnerability,Bug,Cyber Security,bugged;bugging;bug;bugs,bug
+c_ind_jobr_serviceprovider_ds,Context,Individual,Work Role,Service Provider,Security,service_providers;service_provider;services_providers;services_provider,service provider
+c_ind_jobr_manager_ds,Context,Individual,Work Role,Manager,Security,line_managers;line_manager,line manager
+c_ind_jobr_employee_ds,Context,Individual,Work Role,Employee,Security,staffed;staff;staffing;staffers;employees;vendors;staffs;staff_member;staffer;staff_members;employee;personnel;vendor,staff member;staff;personnel;employee;staffer;vendor;staffing
+c_ind_jobr_contractmanager_ds,Context,Individual,Work Role,Contract Manager,Security,contracts_manager;contractor;contract_manager;contractors;contract_managers,contract manager;contractor
